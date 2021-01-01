@@ -40,9 +40,33 @@ They can study for the quiz by using the links and the search bar to find out in
 
 ### User Stories
 
+* "I want to be anle to view and use the site at any and all screen sizes"
+
+* "I want to understand what the site is about and easily manouver throughout the site."
+
+* "I want to be able to search and find whatever country I am looking for"
+
+* "I want to be able to start the game when I am fuly ready and I don't want it to start before I say so."
+
+* "I want to be able to read the questions and answers easily and to be able to click on any answer I want."
+
+* "I want to know wheter or not my answer was correct"
+
+* "I want to be able to proceed to the next question at my own pace."
+
+* "I want to be able to see my score."
+
+* "I want to be able to start a new game once I have finished the last."
+
+* "I want to be able to contact the site about any problems or issues I had with the game"
+
+* 
+
 ## Scope
 
 ### Features
+
+
 
 ### Future Features
 
@@ -86,5 +110,11 @@ They can study for the quiz by using the links and the search bar to find out in
 ## Code Snippets
 
 # Acknowledgements
+
+I would like to give a huge thanks to my mentor Adebeye for his help throughout this project and throughout the course so far.
+
+I would also like to say a huge thanks to the slack community, I wouldn't be where I am today without them.
+
+I used this [Udemy](https://www.udemy.com/course/50-projects-50-days/learn/lecture/23597708?start=0#content) from Brad Traversy and Florin Pop for some help, guidance and inspiration for my own project. I used it as a source of inspiration for my own project and at times to troubleshoot problems I had.
 
 
