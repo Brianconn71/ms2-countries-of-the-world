@@ -1,45 +1,90 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Countries of the world
 
-Welcome Brianconn71,
+## Purpose
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+This web app was built for the purpose of my second milestone project at Code Institute.
+I built this Website from scratch using a combination of HTML, CSS and JavaScript. There are also eements of jQuery and Bootstrap prevalent in the code.
 
-## Gitpod Reminders
+I chose to do my project based on an quiz mainly as I have a deep love of quizzes myself and I liked the idea of challenging myself to make a quiz app.
+I chose to do it based on the countries of the world and in particular the flags of the countries of the world. 
+Ever since I was a young lad, I have always had a fascination with flags and with geography as a whole.
+I wanted to take that keen interest I have in quizzes and geography to make a flags quiz as my project.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+# Table of Contents
 
-`python3 -m http.server`
+# UX
 
-A blue button should appear to click: *Make Public*,
+## Project Description
 
-Another blue button should appear to click: *Open Browser*.
+## Strategy
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+I created this project as a means of showcasing all that I have learnt so far in my journey towards being a full-stack developer at Code Institute. This is my second project and it showcases my knowledge of
+HTML, CSS and Javascript along with some of the libraries including jQuery and bootstrap. It also showcases knowledge of various methods and functions in the JavaScript language and the dom.
 
-A blue button should appear to click: *Make Public*,
+This website should provide some fun light-hearted entertainment in the form of a quiz based on the flags of the world and other geographical data. I set up the website so as to be a "one-stop" shop. What I mean by this is that Users will also be able to find out information about different countries of the world using the search bar or by clicking on the continent links.
+They can study for the quiz by using the links and the search bar to find out information on countries.
 
-Another blue button should appear to click: *Open Browser*.
+### Goals
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* To show that I have a deep understanding of HTML, CSS and JavaScript
 
-## Updates Since The Instructional Video
+* To create an enjoyable Website/app that Users will love interacting with and want to keep coming back to beat there high score.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* To create a Website/app that will make Users tell there friends and family and to grow the user base.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* To allow Users to show off there skills and knowledge of the corld in a fun and enjoyable way.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* To allow new Users and returning Users to learn about countries of the world andd some information about the countries.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+* To showcase a game that has differing scenarios based on score in the quiz.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### User Stories
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Scope
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Features
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Future Features
 
---------
+## Structure
 
-Happy coding!
+## Skeleton
+
+### Wireframes
+
+## Surface
+
+### Color
+
+### images
+
+### Fonts
+
+# Technologies Used
+
+# Testing
+
+# Deployment
+
+# Credits
+
+* carousel images on header
+    * [An image of the earth from space](https://unsplash.com/photos/Q1p7bh3SHj8) taken by [Nasa](https://unsplash.com/@nasa)
+
+    * [An image of the map of the world](https://pixabay.com/illustrations/map-of-the-world-background-paper-2401458/) taken by [Yuri_B](https://pixabay.com/users/yuri_b-2216431/)
+
+    * [An aerial image of America](https://unsplash.com/photos/1lfI7wkGWZ4) taken by [Nasa](https://unsplash.com/@nasa)
+
+    * [An image of the world painted](https://unsplash.com/photos/eyfMgGvo9PA) taken by [Brett Zeck](https://unsplash.com/@iambrettzeck)
+
+    * [An image of Europe](https://unsplash.com/photos/inNzGtPrkHk) taken by [USGS](https://unsplash.com/@usgs)
+
+## Contents
+
+## Media
+
+## Code Snippets
+
+# Acknowledgements
+
+
