@@ -9,6 +9,7 @@ body{
     justify-content: center;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 /* Nav bar */
@@ -45,6 +46,12 @@ nav a:hover{
 button.menu-toggler:focus{
     outline: none;
 }
+/* Header */ 
+.page-hdr{
+    height: 100vh;
+    width: 100%;
+}
+
 
 
 /* footer */
