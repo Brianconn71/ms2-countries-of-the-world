@@ -16,17 +16,34 @@ body{
     background-color: #44cfcb;
     width: 100%;
 }
-nav a{
+.nav-logo{
     max-width: 50%;
     color: #fcecc9;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
+    margin-right: 5rem;
 }
 nav a:hover{
     color: #fcecc9;
     filter: brightness(110%);
+}
+.nav-link.nav-menu-item{
+    color: #fcecc9;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+.menu-icon{
+    color: #fcecc9;;
+    font-size: 2rem;
+}
+.menu-toggler{
+    border: 1px solid #fcecc9;
+}
+button.menu-toggler:focus{
+    outline: none;
 }
 
 
