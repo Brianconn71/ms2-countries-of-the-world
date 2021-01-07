@@ -5,11 +5,11 @@
 }
 body{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: auto;
 }
 
 /* Nav bar */
@@ -50,8 +50,25 @@ button.menu-toggler:focus{
 .page-hdr{
     height: 100vh;
     width: 100%;
+    position: relative;
 }
-
+.btn-display{
+    position: absolute;
+    width: 100%;
+    top: 70%;
+}
+/* resolved issues relating to button placement here https://stackoverflow.com/questions/7560832/how-to-center-a-button-within-a-div */
+.btn-cta{
+    background-color: #F35B04;
+    color: #fcecc9;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem 0.8rem;
+    z-index: 1000;
+}
 
 
 /* footer */
