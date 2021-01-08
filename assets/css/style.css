@@ -82,7 +82,7 @@ button.menu-toggler:focus{
 .copyright{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     margin-left: 1.2rem;
 }
 .cp-symbol{
@@ -93,4 +93,19 @@ button.menu-toggler:focus{
     font-family: 'Raleway', sans-serif;
     font-size: 0.8rem;
     margin-left: 0.3rem;;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+}
+.social-media-links{
+    color: #fcecc9;
+    font-size: 1.5rem;
+}
+.footer-text{
+    color: #fcecc9;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
 }
