@@ -10,6 +10,7 @@ body{
     margin: 0;
     padding: 0;
     overflow: auto;
+    overflow-x: hidden;
 }
 
 /* Nav bar */
@@ -69,7 +70,7 @@ button.menu-toggler:focus{
     margin: 0 auto;
     padding: 0.5rem 0.8rem;
     cursor: pointer;
-    box-shadow: 0 0.4rem rgba(15, 15, 15, 0.4);
+    box-shadow: 0 0.4rem rgba(15, 15, 15, 0.2);
     z-index: 1000;
 }
 .btn-cta:focus{
@@ -77,7 +78,19 @@ button.menu-toggler:focus{
 }
 .btn-cta:active{
     transform: translate(0, 0.3rem);
-    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.2);
+}
+.header-imgs{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.9s ease-in-out;
+}
+.header-carosel-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 
@@ -113,9 +126,4 @@ button.menu-toggler:focus{
 .social-media-links{
     color: #fcecc9;
     font-size: 1.5rem;
-}
-.footer-text{
-    color: #fcecc9;
-    font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
 }
