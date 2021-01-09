@@ -65,9 +65,19 @@ button.menu-toggler:focus{
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     display: block;
+    border: transparent;
     margin: 0 auto;
     padding: 0.5rem 0.8rem;
+    cursor: pointer;
+    box-shadow: 0 0.4rem rgba(15, 15, 15, 0.4);
     z-index: 1000;
+}
+.btn-cta:focus{
+    outline: none;
+}
+.btn-cta:active{
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.4);
 }
 
 
