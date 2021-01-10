@@ -1,3 +1,12 @@
+// A jQuery function to move the page down to the search section once the user clicks on the header cta button
+// I spent some time figuring this out but eventually I got my answer here: https://stackoverflow.com/questions/2238368/how-to-make-a-button-redirect-to-another-page-using-jquery-or-just-javascript
+$(document).ready(function(){
+    $("#hdr-cta-btn").click(function(){
+        window.location="#blah";
+    });
+});   
+
+
 // Creating a function which will slide through the images on my header
 const headImgs = document.getElementById('header-imgs');
 
