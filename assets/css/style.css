@@ -62,13 +62,13 @@ button.menu-toggler:focus{
 .btn-cta{
     background-color: #F35B04;
     color: #fcecc9;
-    border-radius: 10px;
+    border-radius: 30px;
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     display: block;
     border: transparent;
     margin: 0 auto;
-    padding: 0.5rem 0.8rem;
+    padding: 1rem 1.2rem;
     cursor: pointer;
     box-shadow: 0 0.4rem rgba(15, 15, 15, 0.2);
     z-index: 1000;
@@ -92,6 +92,25 @@ button.menu-toggler:focus{
     width: 100%;
     object-fit: cover;
 }
+
+/* Contact us */
+.contact-us{
+    height: 100vh;
+}
+.container{
+    width: 80%;
+}
+.contact-section-title{
+    width: 100%;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #000;
+    line-height: 1.2;
+    text-align: center;
+    padding: 2rem 1.5rem;
+}
+
 
 
 /* footer */

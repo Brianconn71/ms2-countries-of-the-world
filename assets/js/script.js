@@ -1,3 +1,4 @@
+// Creating a function which will slide through the images on my header
 const headImgs = document.getElementById('header-imgs');
 
 const img = document.querySelectorAll('#header-imgs img');
