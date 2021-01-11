@@ -31,7 +31,7 @@
     </nav>
 
     <!-- Header -->
-    <header class="page-hdr">
+    <header class="page-hdr fader">
         <div class="header-imgs" id="header-imgs">
             <img src="assets/images/earth-from-space.jpg" class="header-carosel-image" alt="an image of earth taken from space">
             <img src="assets/images/aerial-image-of-america.jpg"  class="header-carosel-image" alt="an aerial image taken of america">
@@ -49,6 +49,11 @@
 
     </section>
 
+    <!-- Quiz game -->
+    <section class="quiz-game">
+
+    </section>
+
     <!-- Contact us section -->
     <section class="contact-us">
         <div class="container" >
@@ -57,23 +62,23 @@
                     <h2 class="contact-section-title" id="blah">Send us a message</h2>
                 </div>
             </div>
-            <form>                    
+            <form class="contact-form">                    
                 <div class="form-floating form-groups">
                      <label for="first-name" class="labels">First Name:</label>
-                     <input type="text" id="first-name" name="first-name" class="form-control inputs" placeholder="Enter your first name">
+                     <input type="text" id="first-name" name="first-name" class="form-control inputs" placeholder="Enter your first name" required>
                 </div>
                 <div class="form-floating form-groups">
                     <label for="last-name" class="labels">Last Name:</label>
-                    <input type="text" id="last-name" name="last-name" class="form-control inputs" placeholder="Enter your last name">
+                    <input type="text" id="last-name" name="last-name" class="form-control inputs" placeholder="Enter your last name" required>
                 </div>
                 <div class="form-floating form-groups">
                     <label for="email" class="labels">Email:</label>
-                    <input type="text" id="email" name="email" class="form-control inputs" placeholder="Enter your email address">
+                    <input type="text" id="email" name="email" class="form-control inputs" placeholder="Enter your email address" required>
                 </div>
                 <br>
                 <div class="form-floating form-groups">
                     <label for="reason" class="labels">What is the message regarding:</label>
-                    <select name="reason" id="reason" class="form-select select-inputs">
+                    <select name="reason" id="reason" class="form-select select-inputs" required>
                         <option value="general-query">General Query</option>
                         <option value="feedback">Feedback on the site</option>
                         <option value="high-score">Send us your high score!</option>
@@ -81,7 +86,7 @@
                 </div>
                 <div class="form-floating form-groups">
                     <label for="message" class="labels">Message:</label>
-                    <textarea name="message" id="message" class="form-control txt-area-input" cols="25" rows="5" placeholder="Enter your message..."></textarea>
+                    <textarea name="message" id="message" class="form-control txt-area-input" cols="25" rows="5" placeholder="Enter your message..." required></textarea>
                 </div>
                 <div class="submit-btn-container">
                     <input type="submit" value="Submit" class="submit-btn">
