@@ -101,6 +101,12 @@ button.menu-toggler:focus{
     object-fit: cover;
 }
 /* Search box section */
+.search-for-country{
+    height: 100vh;
+}
+.search-for-country h2{
+    margin-left: 4rem; 
+}
 .search-box{
     display: flex;
     align-items: center;
@@ -233,4 +239,17 @@ select.select-inputs:focus{
 .social-media-links{
     color: #fcecc9;
     font-size: 1.5rem;
+    transition: all .1s ease-in-out;
+}
+.social-media-links:hover{
+    transform: scale(1.1)
+}
+#facebook-link:hover{
+    color: #337BBD;
+}
+#twitter-link:hover{
+    color: #4296C2;
+}
+#insta-link:hover{
+    color: #DB3C5A;
 }
