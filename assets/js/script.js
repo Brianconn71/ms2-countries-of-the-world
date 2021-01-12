@@ -27,7 +27,7 @@ function changeImage(){
     } else if(idx < 0){
         idx = img.length -1;
     }
-    headImgs.style.transform = `translateX(${-idx * 100}vw)`
+    headImgs.style.transform= `translateX(${-idx * 100}vw)`
 }
 function resetInterval(){
     clearInterval(interval)

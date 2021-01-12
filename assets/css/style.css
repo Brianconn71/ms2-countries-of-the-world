@@ -26,6 +26,7 @@ body{
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     margin-right: 5rem;
+    text-shadow: 0.2rem 0.2rem rgba(15, 15, 15, 0.2);
 }
 nav a:hover{
     color: #fcecc9;
