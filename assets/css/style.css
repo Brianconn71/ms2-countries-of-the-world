@@ -100,6 +100,25 @@ button.menu-toggler:focus{
     width: 100%;
     object-fit: cover;
 }
+/* Search box section */
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search{
+    width: 80%;
+    background-color: transparent;
+    border: 3px solid black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    padding: 1.2rem;
+    border-radius: 30px;
+    color: #F35B04;
+}
+.search:focus{
+    outline: none;
+}
 
 /* Contact us */
 .contact-us{
