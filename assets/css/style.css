@@ -126,6 +126,22 @@ button.menu-toggler:focus{
 .search:focus{
     outline: none;
 }
+.button-container{
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 2rem;
+}
+.continent-btn{
+    background-color: #F35B04;
+    color: #fcecc9;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    display: block;
+    flex-wrap: wrap;
+    border: transparent;
+    padding: 0.5rem 1.2rem;
+}
 
 /* Contact us */
 .contact-us{
