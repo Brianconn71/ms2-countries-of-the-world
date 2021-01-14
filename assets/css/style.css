@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 body{
+    background-color: #CC978E;
     display: flex;
     flex-direction: column;
     height: 100%;
+    width:100%;
     margin: 0;
     padding: 0;
     overflow: auto;
@@ -15,7 +17,7 @@ body{
 
 /* Nav bar */
 .navbar-custom{
-    background-color: #44cfcb;
+    background-color: #261447;
     width: 100%;
 }
 .nav-logo{
@@ -69,7 +71,7 @@ button.menu-toggler:focus{
 }
 /* resolved issues relating to button placement here https://stackoverflow.com/questions/7560832/how-to-center-a-button-within-a-div */
 .btn-cta{
-    background-color: #F35B04;
+    background-color: #ED691D;
     color: #fcecc9;
     border-radius: 30px;
     font-family: 'Poppins', sans-serif;
@@ -103,10 +105,15 @@ button.menu-toggler:focus{
 }
 /* Search box section */
 .search-for-country{
-    height: 100vh;
+    height: 70vh;
 }
-.search-for-country h2{
-    margin-left: 4rem; 
+.search-text{
+    color: #262730;
+    font-size: 1.8rem;
+    margin: 2.2rem 0;
+    padding: 1.2rem;
+    text-align: center;
+    text-transform: capitalize;
 }
 .search-box{
     display: flex;
@@ -116,15 +123,15 @@ button.menu-toggler:focus{
 .search{
     width: 80%;
     background-color: transparent;
-    border: 3px solid black;
+    border: 3px solid #261447;
     font-family: 'Raleway', sans-serif;
     font-size: 1.2rem;
     padding: 1.2rem;
     border-radius: 30px;
-    color: #F35B04;
+    color: #ED691D;
 }
 .search::placeholder{
-    color: #fcecc9;
+    color: #262730;
 }
 .search:focus{
     outline: none;
@@ -135,7 +142,7 @@ button.menu-toggler:focus{
     margin-top: 2rem;
 }
 .continent-btn{
-    background-color: #F35B04;
+    background-color: #ED691D;
     color: #fcecc9;
     min-width: 5rem;
     border-radius: 30px;
@@ -153,7 +160,7 @@ button.menu-toggler:focus{
 }
 .container{
     width: 80%;
-    background-color: lightslategray;
+    background-color: #C0BDA5;
     height: 100vh;
     margin-bottom: 25%;
 }
@@ -162,7 +169,7 @@ button.menu-toggler:focus{
     display: block;
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
-    color: #000;
+    color: #262730;
     line-height: 1.2;
     text-align: center;
     padding: 2rem 1.5rem;
@@ -174,9 +181,10 @@ button.menu-toggler:focus{
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    color: #fcecc9;
+    color: #262730;
 }
 input.inputs{
+    color: #262730;
     font-family: 'Raleway', sans-serif;
     font-size: 0.8rem;
     border-color: transparent;
@@ -184,7 +192,11 @@ input.inputs{
     padding: 1rem;
     box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
 }
+.inputs::placeholder{
+    color: #262730;
+}
 select.select-inputs{
+    color: #262730;
     font-family: 'Raleway', sans-serif;
     font-size: 0.8rem;
     border-color: transparent;
@@ -198,6 +210,7 @@ select.select-inputs:focus{
     outline: none;
 }
 .txt-area-input{
+    color: #262730;
     font-family: 'Raleway', sans-serif;
     font-size: 0.8rem;
     border-color: transparent;
@@ -206,13 +219,16 @@ select.select-inputs:focus{
     border-radius: 20px;
     box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
 }
+.txt-area-input::placeholder{
+    color: #262730;
+}
 /* needed help to center my submit button which I got here https://stackoverflow.com/questions/4221263/center-form-submit-buttons-html-css */
 .submit-btn-container{
     text-align: center;
     margin-bottom: 1.5rem;
 }
 .submit-btn{
-    background-color: #F35B04;
+    background-color: #ED691D;
     color: #fcecc9;
     width: 80%;
     padding: 0.5rem;
@@ -230,7 +246,7 @@ select.select-inputs:focus{
 }
 /* footer */
 .footer{
-    background-color: #44cfcb;
+    background-color: #261447;
     height: 3.5rem;
     width: 100%;
     display: flex;
