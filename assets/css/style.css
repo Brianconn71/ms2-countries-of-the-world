@@ -10,6 +10,7 @@ body{
     height: 100%;
     width:100%;
     margin: 0;
+    left: 0;
     padding: 0;
     overflow: auto;
     overflow-x: hidden;
@@ -32,7 +33,7 @@ body{
 }
 nav a:hover{
     color: #fcecc9;
-    filter: brightness(110%);
+    filter: brightness(140%);
 }
 .nav-link.nav-menu-item{
     color: #fcecc9;
@@ -56,7 +57,7 @@ button.menu-toggler:focus{
     width: 100%;
     position: relative;
 }
-/* Added a fde animation to the header which I got help on here https://blog.hubspot.com/website/css-fade-in  */
+/* Added a fader animation to the header which I got help on here https://blog.hubspot.com/website/css-fade-in  */
 .fader{
     animation: fader ease 5s;
 }
@@ -105,13 +106,13 @@ button.menu-toggler:focus{
 }
 /* Search box section */
 .search-for-country{
-    height: 70vh;
+    height: auto;
 }
 .search-text{
     color: #262730;
     font-size: 1.8rem;
-    margin: 2.2rem 0;
-    padding: 1.2rem;
+    margin: 1rem 0;
+    padding: 1rem;
     text-align: center;
     text-transform: capitalize;
 }
@@ -129,6 +130,7 @@ button.menu-toggler:focus{
     padding: 1.2rem;
     border-radius: 30px;
     color: #ED691D;
+    opacity: 0.7;
 }
 .search::placeholder{
     color: #262730;
@@ -139,12 +141,14 @@ button.menu-toggler:focus{
 .button-container{
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 2rem;
+    margin: 2rem;
+    padding-bottom: 4rem;
 }
 .continent-btn{
     background-color: #ED691D;
     color: #fcecc9;
-    min-width: 5rem;
+    width: 12rem;
+    min-width: 6rem;
     border-radius: 30px;
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
@@ -152,6 +156,15 @@ button.menu-toggler:focus{
     flex-wrap: wrap;
     border: transparent;
     padding: 0.5rem 1.2rem;
+    margin: 1rem;
+    box-shadow: 0 0.4rem rgba(15, 15, 15, 0.2);
+}
+.continent-btn:active{
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.2);
+}
+.continent-btn:focus{
+    outline: none;
 }
 
 /* Contact us */
@@ -161,8 +174,8 @@ button.menu-toggler:focus{
 .container{
     width: 80%;
     background-color: #C0BDA5;
-    height: 100vh;
-    margin-bottom: 25%;
+    height: auto;
+    padding: 3rem 1rem;
 }
 .contact-section-title{
     width: 100%;
@@ -172,7 +185,7 @@ button.menu-toggler:focus{
     color: #262730;
     line-height: 1.2;
     text-align: center;
-    padding: 2rem 1.5rem;
+    padding: 1rem 1.5rem;
 }
 .form-groups{
     margin-bottom: 1.5rem;;
