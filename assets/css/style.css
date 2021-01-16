@@ -15,6 +15,9 @@ body{
     overflow: auto;
     overflow-x: hidden;
 }
+.hide{
+    display: none;
+}
 
 /* Nav bar */
 .navbar-custom{
@@ -165,6 +168,60 @@ button.menu-toggler:focus{
 }
 .continent-btn:focus{
     outline: none;
+}
+
+/* Quiz game section */
+.quiz-game{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #CC978E;
+}
+.quiz-container{
+    width: 80%;
+    max-width: 80%;
+    background-color: #DB3C5A;
+    border-radius: 30px;
+    padding: 1rem;
+    box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
+}
+.answer-btns{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+    margin: 1.5rem
+}
+.answer-btn{
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #C0BDA5;
+    border: 2px solid #261447;
+    border-radius: 30px;
+    padding: 1rem;
+    color: #262730;
+}
+.answer-btn:focus{
+    outline: none;
+}
+.answer-btn:hover{
+    filter: brightness(120%)
+}
+.start-btn, .next-btn{
+    background-color: aqua;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border-radius: 30px;
+    outline: none;
+    padding: 1rem;
+}
+.start-btn:hover, .next-btn:hover{
+    filter: brightness(120%)
+}
+.contorl-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
 }
 
 /* Contact us */
