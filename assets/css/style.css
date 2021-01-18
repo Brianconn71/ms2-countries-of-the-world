@@ -227,7 +227,7 @@ button.menu-toggler:focus{
 .start-btn:hover, .next-btn:hover{
     filter: brightness(120%)
 }
-.contorl-btns{
+.control-btns{
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -322,6 +322,18 @@ select.select-inputs:focus{
 .submit-btn:active{
     transform: translate(0, 0.3rem);
     box-shadow: 0 0.1rem rgba(255, 255, 255, 0.2);
+}
+.submit-form{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 4rem;
+    margin-bottom: 3rem;
+}
+.submit-form, h2{
+    display: block;
+    text-align: center;
 }
 /* footer */
 .footer{
