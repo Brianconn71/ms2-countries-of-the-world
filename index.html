@@ -98,11 +98,11 @@
     <section class="contact-us">
         <div class="container" >
             <div class="row">
-                <div class="col hide">
+                <div class="col contact-title">
                     <h2 class="contact-section-title" id="blah">Send us a message</h2>
                 </div>
             </div>
-            <form onsubmit="return sendMail(this)" class="contact-form hide">                    
+            <form onsubmit="return sendMail(this)" class="contact-form">                    
                 <div class="form-floating form-groups">
                      <label for="first-name" class="labels">First Name:</label>
                      <input type="text" id="first-name" name="first-name" class="form-control inputs" placeholder="Enter your first name" required>
@@ -132,7 +132,7 @@
                     <input type="submit" value="Submit" class="submit-btn">
                 </div>
             </form>
-            <div class="submit-form">
+            <div class="submit-form hide">
                 <h2>Thank you for your message!</h2>
                 <h6>We will get back to you ASAP!</h6>
             </div>

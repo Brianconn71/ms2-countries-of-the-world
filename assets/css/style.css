@@ -16,7 +16,7 @@ body{
     overflow-x: hidden;
 }
 .hide{
-    display: none;
+    display: none !important;
 }
 
 /* Nav bar */

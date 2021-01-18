@@ -6,6 +6,15 @@ $(document).ready(function(){
     });
 });   
 
+$(document).ready(function(){
+    $("form").submit(function(){
+        $(".contact-form").hide();
+    });
+    $("form").submit(function(){
+        $(".submit-form").removeClass("hide");
+    })
+})
+
 
 // Creating a function which will slide through the images on my header
 const headImgs = document.getElementById('header-imgs');
