@@ -329,11 +329,14 @@ select.select-inputs:focus{
     justify-content: center;
     height: auto;
     padding: 4rem;
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
 }
 .submit-form, h2{
+    color: #262730;
+    font-size: 1.3rem;
     display: block;
     text-align: center;
+    margin-bottom: 1rem;
 }
 /* footer */
 .footer{
@@ -381,3 +384,5 @@ select.select-inputs:focus{
 #insta-link:hover{
     color: #DB3C5A;
 }
+
+/* Media Queries */
