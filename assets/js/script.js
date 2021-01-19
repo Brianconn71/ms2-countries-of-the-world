@@ -48,9 +48,11 @@ function resetInterval(){
 
 function sendMail(contactForm){
     emailjs.send("service_9fhvo61", "template_pcsmdnv",{
-        "from_name": contactForm.first-name.value,
+        "from_first_name": contactForm.first-name.value,
+        "from_second_name": contactForm.last-name.value,
         "from_email": contactForm.email.value,
-        "Message": contactForm.reason.value,
+        "subject": contactForm.reason.value,
+        "message": contactForm.message.value,
     }).then(
         function(response){
             console.log("success", response);
