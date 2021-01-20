@@ -44,8 +44,8 @@ function resetInterval(){
     clearInterval(interval)
     interval = setInterval(run, 5000)
 }
-//This function will send a filled out contact form to mail.js
 
+//This function will send a filled out contact form to mail.js
 function sendMail(contactForm){
     emailjs.send("service_9fhvo61", "template_pcsmdnv",{
         "from_first_name": contactForm.first-name.value,
@@ -62,4 +62,17 @@ function sendMail(contactForm){
         }
     )
     return false;
+}
+
+//function to retrieve information on a country that a user types into the searchbar
+function getCountryData(event){
+    var search = $("#search").val();
+
+    if(!search){
+        $("#country-data").addClass("hide");
+        return;
+    }
+
+    $("#country-data").html(`
+    <div> <img src="assets/images/loading_gif.gif" alt="loading country data..."/></div>`);
 }
