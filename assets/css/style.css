@@ -120,7 +120,8 @@ button.menu-toggler:focus{
     text-transform: capitalize;
 }
 .search-box{
-    display: flex;
+    display: block;
+    text-align: center;
     align-items: center;
     justify-content: center;
 }
