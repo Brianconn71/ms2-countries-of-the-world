@@ -19,20 +19,22 @@ $(document).ready(function(){
 
 
 // Creating a function which will slide through the images on my header
-const headImgs = document.getElementById('header-imgs');
 
+const headImgs = document.getElementById('header-imgs');
 const img = document.querySelectorAll('#header-imgs img');
 
-let idx = 0
 
+let idx = 0
 let interval = setInterval(run, 10000)
 
 function run(){
+    
     idx++
 
     changeImage()
 }
 function changeImage(){
+
     if(idx > img.length -1){
         idx = 0
     } else if(idx < 0){
@@ -64,15 +66,3 @@ function sendMail(contactForm){
     return false;
 }
 
-//function to retrieve information on a country that a user types into the searchbar
-function getCountryData(event){
-    var search = $("#search").val();
-
-    if(!search){
-        $("#country-data").addClass("hide");
-        return;
-    }
-
-    $("#country-data").html(`
-    <div> <img src="assets/images/loading_gif.gif" alt="loading country data..."/></div>`);
-}
