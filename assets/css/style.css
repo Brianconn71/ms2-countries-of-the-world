@@ -122,8 +122,6 @@ button.menu-toggler:focus{
 .search-box{
     display: block;
     text-align: center;
-    align-items: center;
-    justify-content: center;
 }
 .search{
     width: 80%;
