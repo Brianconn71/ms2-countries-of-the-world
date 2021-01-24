@@ -29,36 +29,162 @@ $(document).ready(function(){
 
 })
 
-var loadAfrica = function(){
-$(document).ready(function(){
-    $('#africa-btn').on('click', function(event){
-        // Make ajax request
-        $.ajax({
-            url: `https://restcountries.eu/rest/v2/region/africa`,
-        }).done(function(data){
-            data.forEach(function(m){
-                document.getElementById('africa').innerHTML += `
-                <div class="card country-card">
-                <img src="${m[Object.keys(m)[21]]}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title country-title">${m[Object.keys(m)[0]]}</h5>
-                    <p class="card-text">
-                        <ul class="basic-info">
-                            <li class="general-info">Capital City: ${m[Object.keys(m)[5]]}</li>
-                            <li class="general-info">Sub-Continent: ${m[Object.keys(m)[8]]}</li>
-                            <li class="general-info">Population: ${m[Object.keys(m)[9]]}</li>
-                        </ul>
-                    </p>
-                </div>
-            </div>               
-                `
-            
-            // $('#africa').text(
-            // `${m[Object.keys(m)[0]]}`
-            // )
-            })
-        });
-    })
 
+    $(document).ready(function(){
+        $('#africa-btn').on("click",function(event){
+            // Make ajax request
+            $.ajax({
+                url: `https://restcountries.eu/rest/v2/region/africa`,
+            }).done(function(data){
+                data.forEach(function(m){
+                    document.getElementById('africa').innerHTML += `
+                    <div class="container" id="row-country">
+                        <div class="row">
+                            <div class="col-3 d-flex align-items-center">
+                                <img src="${m[Object.keys(m)[21]]}" class="img-thumbnail" alt="flags of africa">
+                            </div>
+                            <div class="col-9">
+                                <h5 class="country-title">${m[Object.keys(m)[0]]}</h5>
+                                <p class="card-text">
+                                    <ul class="basic-info">
+                                        <li class="general-info">Capital City: ${m[Object.keys(m)[5]]}</li>
+                                        <li class="general-info">Sub-Continent: ${m[Object.keys(m)[8]]}</li>
+                                        <li class="general-info">Population: ${m[Object.keys(m)[9]]}</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>              
+                    `
+                })
+            });
+        })
 })
-}
+
+$(document).ready(function(){
+        $('#asia-btn').on("click",function(event){
+            // Make ajax request
+            $.ajax({
+                url: `https://restcountries.eu/rest/v2/region/asia`,
+            }).done(function(data){
+                data.forEach(function(m){
+                    document.getElementById('asia').innerHTML += `
+                    <div class="container" id="row-country">
+                        <div class="row">
+                            <div class="col-3 d-flex align-items-center">
+                                <img src="${m[Object.keys(m)[21]]}" class="img-thumbnail" alt="flags of africa">
+                            </div>
+                            <div class="col-9">
+                                <h5 class="country-title">${m[Object.keys(m)[0]]}</h5>
+                                <p class="card-text">
+                                    <ul class="basic-info">
+                                        <li class="general-info">Capital City: ${m[Object.keys(m)[5]]}</li>
+                                        <li class="general-info">Sub-Continent: ${m[Object.keys(m)[8]]}</li>
+                                        <li class="general-info">Population: ${m[Object.keys(m)[9]]}</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>              
+                    `
+                })
+            });
+        })
+})
+
+$(document).ready(function(){
+        $('#europe-btn').on("click",function(event){
+            // Make ajax request
+            $.ajax({
+                url: `https://restcountries.eu/rest/v2/region/europe`,
+            }).done(function(data){
+                data.forEach(function(m){
+                    document.getElementById('europe').innerHTML += `
+                    <div class="container" id="row-country">
+                        <div class="row">
+                            <div class="col-3 d-flex align-items-center">
+                                <img src="${m[Object.keys(m)[21]]}" class="img-thumbnail" alt="flags of africa">
+                            </div>
+                            <div class="col-9">
+                                <h5 class="country-title">${m[Object.keys(m)[0]]}</h5>
+                                <p class="card-text">
+                                    <ul class="basic-info">
+                                        <li class="general-info">Capital City: ${m[Object.keys(m)[5]]}</li>
+                                        <li class="general-info">Sub-Continent: ${m[Object.keys(m)[8]]}</li>
+                                        <li class="general-info">Population: ${m[Object.keys(m)[9]]}</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>              
+                    `
+                })
+            });
+        })
+})
+
+$(document).ready(function(){
+        $('#america-btn').on("click",function(event){
+            // Make ajax request
+            $.ajax({
+                url: `https://restcountries.eu/rest/v2/region/americas`,
+            }).done(function(data){
+                data.forEach(function(m){
+                    document.getElementById('america').innerHTML += `
+                    <div class="container" id="row-country">
+                        <div class="row">
+                            <div class="col-3 d-flex align-items-center">
+                                <img src="${m[Object.keys(m)[21]]}" class="img-thumbnail" alt="flags of africa">
+                            </div>
+                            <div class="col-9">
+                                <h5 class="country-title">${m[Object.keys(m)[0]]}</h5>
+                                <p class="card-text">
+                                    <ul class="basic-info">
+                                        <li class="general-info">Capital City: ${m[Object.keys(m)[5]]}</li>
+                                        <li class="general-info">Sub-Continent: ${m[Object.keys(m)[8]]}</li>
+                                        <li class="general-info">Population: ${m[Object.keys(m)[9]]}</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>              
+                    `
+                })
+            });
+        })
+})
+$(document).ready(function(){
+        $('#oceania-btn').on("click",function(event){
+            // Make ajax request
+            $.ajax({
+                url: `https://restcountries.eu/rest/v2/region/oceania`,
+            }).done(function(data){
+                data.forEach(function(m){
+                    document.getElementById('oceania').innerHTML += `
+                    <div class="container" id="row-country">
+                        <div class="row">
+                            <div class="col-3 d-flex align-items-center">
+                                <img src="${m[Object.keys(m)[21]]}" class="img-fluid" alt="flags of africa">
+                            </div>
+                            <div class="col-9">
+                                <h5 class="country-title">${m[Object.keys(m)[0]]}</h5>
+                                <p class="card-text">
+                                    <ul class="basic-info">
+                                        <li class="general-info">Capital City: ${m[Object.keys(m)[5]]}</li>
+                                        <li class="general-info">Sub-Continent: ${m[Object.keys(m)[8]]}</li>
+                                        <li class="general-info">Population: ${m[Object.keys(m)[9]]}</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>              
+                    `
+                })
+            });
+        })
+})
