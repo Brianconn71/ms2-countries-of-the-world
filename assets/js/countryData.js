@@ -1,4 +1,7 @@
 //Spent way too long stuck here on an issue with jQuery, a very simple fix to was found here https://stackoverflow.com/questions/18271251/typeerror-ajax-is-not-a-function
+
+// Some issues were fixed with jQuery here https://stackoverflow.com/questions/34280868/search-bar-with-jquery & https://javascript.info/fetch and https://stackoverflow.com/questions/43797556/jquery-with-button-onclick-functionquestions/43797556/jquery-with-button-onclick-function
+// I also got guidance and advice here https://www.youtube.com/watch?v=lIKrfLWNsUI&t=1147s&ab_channel=TraversyMedia
 $(document).ready(function(){
     $('#search').on('keyup', function(event){
         let searchValue = event.target.value;
@@ -28,7 +31,8 @@ $(document).ready(function(){
 })
 
 
-// Had to make a change to my buttons as asynchronous calls wren't working so I switched tothe fetch method
+// Had to make a change to my buttons as asynchronous calls wren't working so I switched tothe fetch method https://jakearchibald.com/2015/thats-so-fetch/
+// had trouble accessing my arrays a solution i found that worked was https://stackoverflow.com/questions/16576457/accessing-a-javascripts-object-property-without-knowing-that-property-name
         $('#africa-btn').on("click",function(event){
             
             fetch('https://restcountries.eu/rest/v2/region/africa')

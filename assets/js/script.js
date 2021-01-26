@@ -19,33 +19,47 @@ $(document).ready(function(){
 
 
 // Creating a function which will slide through the images on my header
+var slideidx = 0;
+showSlides();
 
-const headImgs = document.getElementById('header-imgs');
-const img = document.querySelectorAll('#header-imgs img');
+function showSlides(){
+    var i;
+    var slides = document.getElementsByClassName('header-imgs');
 
-
-let idx = 0
-let interval = setInterval(run, 10000)
-
-function run(){
-    
-    idx++
-
-    changeImage()
-}
-function changeImage(){
-
-    if(idx > img.length -1){
-        idx = 0
-    } else if(idx < 0){
-        idx = img.length -1;
+    for (i =0; i< slides.length; i++){
+        slides[i].getElementsByClassName.display = "none";
     }
-    headImgs.style.transform= `translateX(${-idx * 100}vw)`
+    slideidx++
+    if(slideidx> slides.length){slideidx = 1}
+    slides[slideidx-1].getElementsByClassName.display = "block";
+    setTimeout(showSlides, 3000)
 }
-function resetInterval(){
-    clearInterval(interval)
-    interval = setInterval(run, 5000)
-}
+// const headImgs = document.getElementById('header-imgs');
+// const img = document.querySelectorAll('#header-imgs');
+
+
+// let idx = 0
+// let interval = setInterval(run, 10000)
+
+// function run(){
+    
+//     idx++
+
+//     changeImage()
+// }
+// function changeImage(){
+
+//     if(idx > img.length -1){
+//         idx = 0
+//     } else if(idx < 0){
+//         idx = img.length -1;
+//     }
+//     headImgs.style.transform= `translateX(${-idx * 100}vw)`
+// }
+// function resetInterval(){
+//     clearInterval(interval)
+//     interval = setInterval(run, 5000)
+// }
 
 //This function will send a filled out contact form to mail.js
 function sendMail(contactForm){
