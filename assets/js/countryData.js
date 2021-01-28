@@ -33,6 +33,7 @@ $(document).ready(function(){
 
 // Had to make a change to my buttons as asynchronous calls wren't working so I switched tothe fetch method https://jakearchibald.com/2015/thats-so-fetch/
 // had trouble accessing my arrays a solution i found that worked was https://stackoverflow.com/questions/16576457/accessing-a-javascripts-object-property-without-knowing-that-property-name
+// also figured out how to place my close button in the right corner here: https://stackoverflow.com/questions/6632340/place-a-button-right-aligned
         $('#africa-btn').on("click",function(event){
             
             fetch('https://restcountries.eu/rest/v2/region/africa')
@@ -40,12 +41,12 @@ $(document).ready(function(){
             .then((data) =>  data.forEach(function(m){
                     document.getElementById('africa').innerHTML += `
                         <div class="container" id="row-country">
-                            <button class="continent-btn" id="close" onclick="closeBtnAfrica()">Close</button>
                                 <div class="row">
                                     <div class="col-3 d-flex align-items-center">
                                         <img src="${m[Object.keys(m)[21]]}" class="img-fluid" alt="flags of africa">
                                     </div>
                                     <div class="col-9">
+                                    <button id="close" onclick="closeBtnAfrica()"><i class="fas fa-window-close"></i></button>
                                         <h5 class="country-title">${m[Object.keys(m)[0]]}</h5>
                                         <p class="card-text">
                                             <ul class="basic-info">
@@ -71,12 +72,12 @@ $(document).ready(function(){
             .then((data) =>  data.forEach(function(m){
                     document.getElementById('asia').innerHTML += `
                         <div class="container" id="row-country">
-                            <button class="continent-btn" id="close" onclick="closeBtnAsia()">Close</button>
                                 <div class="row">
                                     <div class="col-3 d-flex align-items-center">
                                         <img src="${m[Object.keys(m)[21]]}" class="img-fluid" alt="flags of africa">
                                     </div>
                                     <div class="col-9">
+                                        <button id="close" onclick="closeBtnAsia()"><i class="fas fa-window-close"></i></button>
                                         <h5 class="country-title">${m[Object.keys(m)[0]]}</h5>
                                         <p class="card-text">
                                             <ul class="basic-info">
@@ -103,12 +104,12 @@ $(document).ready(function(){
             .then((data) =>  data.forEach(function(m){
                     document.getElementById('europe').innerHTML += `
                         <div class="container" id="row-country">
-                            <button class="continent-btn" id="close" onclick="closeBtnEurope()">Close</button>
                                 <div class="row">
                                     <div class="col-3 d-flex align-items-center">
                                         <img src="${m[Object.keys(m)[21]]}" class="img-fluid" alt="flags of africa">
                                     </div>
                                     <div class="col-9">
+                                        <button id="close" onclick="closeBtnEurope()"><i class="fas fa-window-close"></i></button>
                                         <h5 class="country-title">${m[Object.keys(m)[0]]}</h5>
                                         <p class="card-text">
                                             <ul class="basic-info">
@@ -135,12 +136,12 @@ $(document).ready(function(){
             .then((data) =>  data.forEach(function(m){
                     document.getElementById('america').innerHTML += `
                         <div class="container" id="row-country">
-                            <button class="continent-btn" id="close" onclick="closeBtnAmerica()">Close</button>
                                 <div class="row">
                                     <div class="col-3 d-flex align-items-center">
                                         <img src="${m[Object.keys(m)[21]]}" class="img-fluid" alt="flags of africa">
                                     </div>
                                     <div class="col-9">
+                                        <button id="close" onclick="closeBtnAmerica()"><i class="fas fa-window-close"></i></button>
                                         <h5 class="country-title">${m[Object.keys(m)[0]]}</h5>
                                         <p class="card-text">
                                             <ul class="basic-info">
@@ -165,12 +166,12 @@ $(document).ready(function(){
             .then((data) =>  data.forEach(function(m){
                     document.getElementById('oceania').innerHTML += `
                         <div class="container" id="row-country">
-                        <button class="continent-btn" id="close" onclick="closeBtnOceania()">Close</button>
                             <div class="row">
                                 <div class="col-3 d-flex align-items-center">
                                     <img src="${m[Object.keys(m)[21]]}" class="img-fluid" alt="flags of africa">
                                 </div>
                                 <div class="col-9">
+                                   <button id="close" onclick="closeBtnOceania()"><i class="fas fa-window-close"></i></button> 
                                  <h5 class="country-title">${m[Object.keys(m)[0]]}</h5>
                                     <p class="card-text">
                                         <ul class="basic-info">

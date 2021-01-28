@@ -205,6 +205,15 @@ button.menu-toggler:focus{
     border-radius: 20px;
     box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.3);
 }
+#close{
+    float: right;
+    background-color: #ED691D;
+    color: #fcecc9;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 0.2rem rgba(15, 15, 15, 0.2);
+}
 
 /* Quiz game section */
 .quiz-game{
