@@ -288,7 +288,9 @@ button.menu-toggler:focus{
     width: 80%;
     background-color: #C0BDA5;
     height: auto;
+    border-radius: 30px;
     padding: 3rem 1rem;
+    box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
 }
 .contact-section-title{
     width: 100%;
