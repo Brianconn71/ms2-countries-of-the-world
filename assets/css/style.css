@@ -263,13 +263,14 @@ button.menu-toggler:focus{
     filter: brightness(120%)
 }
 .start-btn, .next-btn{
-    background-color: aqua;
-    font-size: 2rem;
+    background-color: rgb(3, 226, 226);
+    font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     border-radius: 30px;
     outline: none;
     padding: 1.5rem;
+    word-spacing: 1rem;
 }
 .start-btn:hover, .next-btn:hover{
     filter: brightness(120%)

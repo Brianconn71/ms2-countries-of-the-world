@@ -50,9 +50,9 @@ $(document).ready(function(){
                                         <h5 class="country-title">${m[Object.keys(m)[0]]}</h5>
                                         <p class="card-text">
                                             <ul class="basic-info">
-                                                <li class="general-info">Capital City: ${m[Object.keys(m)[5]]}</li>
-                                                <li class="general-info">Sub-Continent: ${m[Object.keys(m)[8]]}</li>
-                                                <li class="general-info">Population: ${m[Object.keys(m)[9]]}</li>
+                                                <li class="general-info"><strong>Capital City:</strong> ${m[Object.keys(m)[5]]}</li>
+                                                <li class="general-info"><strong>Sub-Continent:</strong> ${m[Object.keys(m)[8]]}</li>
+                                                <li class="general-info"><strong>Population:</strong> ${m[Object.keys(m)[9]]}</li>
                                             </ul>
                                         </p>
                                     </div>
