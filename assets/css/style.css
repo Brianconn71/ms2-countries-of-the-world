@@ -29,10 +29,12 @@ body{
     color: #fcecc9;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    margin-right: 5rem;
+    margin-right: 0.8rem;
     text-shadow: 0.2rem 0.2rem rgba(15, 15, 15, 0.2);
+    white-space: break-spaces;
 }
 nav a:hover{
     color: #fcecc9;
@@ -56,7 +58,7 @@ button.menu-toggler:focus{
 }
 /* Header */ 
 .page-hdr{
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     position: relative;
 }
@@ -110,10 +112,11 @@ button.menu-toggler:focus{
 /* Search box section */
 .search-for-country{
     height: auto;
+    margin-top: 1.2rem;
 }
 .search-text{
     color: #262730;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     margin: 1rem 0;
     padding: 1rem;
     text-align: center;
@@ -128,7 +131,7 @@ button.menu-toggler:focus{
     background-color: transparent;
     border: 3px solid #261447;
     font-family: 'Raleway', sans-serif;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     padding: 1.2rem;
     border-radius: 30px;
     color: #261447;
@@ -169,7 +172,6 @@ button.menu-toggler:focus{
 .button-container{
     flex-wrap: wrap;
     width: 100%;
-    margin: 2rem;
     padding-bottom: 4rem;
 }
 .continent-btn{
@@ -221,10 +223,10 @@ button.menu-toggler:focus{
     align-items: center;
     justify-content: center;
     background-color: #CC978E;
-    margin-bottom: 1.5rem;
+    margin-bottom: 5rem;
 }
 .quiz-container{
-    height: 50vh;
+    height: auto;
     width: 80%;
     max-width: 80%;
     background-color: #DB3C5A;
@@ -235,15 +237,15 @@ button.menu-toggler:focus{
 .question{
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: #262730;
 }
 .answer-btns{
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(1, auto);
     gap: 1rem;
-    margin: 1.5rem
+    margin: 1rem 0rem;
 }
 .answer-btn{
     font-size: 1.5rem;
@@ -328,7 +330,7 @@ select.select-inputs{
     font-family: 'Raleway', sans-serif;
     font-size: 0.8rem;
     border-color: transparent;
-    width: 50%;
+    width: 80%;
     margin-left: 1rem;
     padding: 0.5rem;
     border-radius: 20px;

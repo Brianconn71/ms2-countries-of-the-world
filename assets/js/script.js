@@ -2,7 +2,7 @@
 // I spent some time figuring this out but eventually I got my answer here: https://stackoverflow.com/questions/2238368/how-to-make-a-button-redirect-to-another-page-using-jquery-or-just-javascript
 $(document).ready(function(){
     $("#hdr-cta-btn").click(function(){
-        window.location="#blah";
+        window.location.href = '#search-for-country'
     });
 });   
 
