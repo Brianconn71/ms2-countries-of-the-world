@@ -99,14 +99,9 @@ button.menu-toggler:focus{
     transform: translate(0, 0.3rem);
     box-shadow: 0 0.1rem rgba(255, 255, 255, 0.2);
 }
-.header-imgs{
-    height: 100%;
-    width: 100vw;
-    display: flex;
-    transform: translateX(0);
-    transition: transform 0.9s ease-in-out;
-}
 .header-carousel-image{
+    height: 100%;
+    max-width: 100%;
     object-fit: cover;
 }
 /* Search box section */
