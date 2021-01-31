@@ -17,30 +17,6 @@ $(document).ready(function(){
     })
 })
 
-
-// Creating a function which will slide through the images on my header
-const images = document.getElementById('header-imgs')
-
-const image = document.querySelectorAll('header-carosel-image img')
-
-let index = 0;
-
-let interval = setInterval(showNextImage, 5000)
-
-function showNextImage(){
-    index++
-    changeImage()
-}
-function changeImage(){
-    if(index > image.length -1 ){
-        inndex = 0
-    } else if(index < 0){
-        index = image.length -1
-    }
-
-    images.style.transform = `translateX(${-index * 100}vw)`
-}
-
 //This function will send a filled out contact form to mail.js
 function sendMail(contactForm){
     emailjs.send("service_9fhvo61", "template_pcsmdnv",{

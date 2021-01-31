@@ -1,3 +1,4 @@
+// This page is soley used to retreive country data from the search bar on the index page and to retrieve  in the index.html page
 //Spent way too long stuck here on an issue with jQuery, a very simple fix to was found here https://stackoverflow.com/questions/18271251/typeerror-ajax-is-not-a-function
 
 // Some issues were fixed with jQuery here https://stackoverflow.com/questions/34280868/search-bar-with-jquery & https://javascript.info/fetch and https://stackoverflow.com/questions/43797556/jquery-with-button-onclick-functionquestions/43797556/jquery-with-button-onclick-function
@@ -31,8 +32,12 @@ $(document).ready(function(){
 })
 
 
-// Had to make a change to my buttons as asynchronous calls wren't working so I switched tothe fetch method https://jakearchibald.com/2015/thats-so-fetch/
+// The below jquery functions are used to get information on the countries depending on which continent button that the user clicks
+
+// Had to make a change to my buttons as asynchronous calls wren't working so I switched to the fetch method https://jakearchibald.com/2015/thats-so-fetch/
+
 // had trouble accessing my arrays a solution i found that worked was https://stackoverflow.com/questions/16576457/accessing-a-javascripts-object-property-without-knowing-that-property-name
+
 // also figured out how to place my close button in the right corner here: https://stackoverflow.com/questions/6632340/place-a-button-right-aligned
         $('#africa-btn').on("click",function(event){
             
@@ -190,6 +195,8 @@ $(document).ready(function(){
         })
 })
 
+
+//functions to close the div containing the conitinent country data upon clicking the close button on the top right corner of the elements
 function closeBtnAfrica(){
      document.getElementById('africa').innerHTML = "";
 }
