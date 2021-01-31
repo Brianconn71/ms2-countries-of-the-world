@@ -104,6 +104,25 @@ button.menu-toggler:focus{
     max-width: 100%;
     object-fit: cover;
 }
+/* Styling for the return to top of the page button that displays as the user secrolls */
+#pageTop{
+    display: none;
+    position: fixed;
+    bottom: 4rem;
+    right: 2rem;
+    z-index: 999;
+    border: none;
+    outline: none;
+    background-color: #ED691D;
+    color: #fcecc9;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 30px;
+    font-size: 1.2rem;
+}
+#pageTop:hover{
+    filter: brightness(120%)
+}
 /* Search box section */
 .search-for-country{
     height: auto;
