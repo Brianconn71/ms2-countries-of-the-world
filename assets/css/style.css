@@ -304,6 +304,19 @@ button.menu-toggler:focus{
 .incorrect{
     background-color: red;
 }
+/* scroe and question display on quiz */
+#score-display{
+    display: flex;
+    justify-content: space-between;
+}
+.score{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.score-text{
+    font-size: 1.2rem;
+    text-align: center;
+}
 
 /* Contact us */
 .contact-us{

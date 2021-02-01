@@ -2,11 +2,15 @@
 // Inspiration and guidance for this project was taken from https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=WebDevSimplified and https://www.youtube.com/watch?v=zZdQGs62cR8&list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF&index=3&ab_channel=JamesQQuick 
 // Constants
 const question = document.getElementById('question');
-const startBtn = document.getElementById('start-btn')
-const questionContainer = document.getElementById('question-container')
-const answers = Array.from(document.getElementsByClassName('answer-btn'))
+const startBtn = document.getElementById('start-btn');
+const questionContainer = document.getElementById('question-container');
+const answers = Array.from(document.getElementsByClassName('answer-btn'));
+const questionCounterText = document.getElementById('questionCounter');
+const scoreText = document.getElementById('score')
+
 
 const max_questions = 3;
+const correct_bonus = 10
 
 // lets
 let currentQuestion = {};
@@ -62,6 +66,9 @@ function nextQuestion(){
         return window.location.assign('/end.html')
     }
       questionCounter++
+      questionCounterText.innerText = `${questionCounter}/${max_questions}`;
+    
+
       const questionIndex = Math.floor(Math.random() * availableQuestions.length)
       currentQuestion = availableQuestions[questionIndex]
       question.innerText = currentQuestion.question;
@@ -88,6 +95,9 @@ answers.forEach(choice =>{
         if(selectedAnswer == currentQuestion.answer){
             feedbackClass = 'correct'
         }
+        if(feedbackClass == "correct"){
+            incrementScore(correct_bonus)
+        }
         selectedChoice.classList.add(feedbackClass)
 
         setTimeout(() => {
@@ -97,6 +107,10 @@ answers.forEach(choice =>{
     })
 
 })
+function incrementScore(num){
+    score += num;
+    scoreText.innerText = score
+}
 //     fetch('https://opentdb.com/api.php?amount=10&category=22&difficulty=easy&type=multiple')
 //     .then(res => {
 //         return res.json();
