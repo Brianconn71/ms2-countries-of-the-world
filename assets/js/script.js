@@ -1,10 +1,10 @@
 // function for scrolling back to the top of the page if the user clicks on the return to top button
 scrollButton = document.getElementById('pageTop');
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollToTop()};
 
 // user scrolls 50px down page then button will appear
-function scrollFunction(){
+function scrollToTop(){
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
         scrollButton.style.display = 'block';
     } else {

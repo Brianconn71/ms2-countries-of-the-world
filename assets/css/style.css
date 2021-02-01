@@ -110,6 +110,7 @@ button.menu-toggler:focus{
     position: fixed;
     bottom: 4rem;
     right: 2rem;
+    opacity: 0.7;
     z-index: 999;
     border: none;
     outline: none;
@@ -295,6 +296,13 @@ button.menu-toggler:focus{
     justify-content: center; 
     height: 100%;
     width: 100%;
+}
+
+.correct{
+    background-color: green
+}
+.incorrect{
+    background-color: red;
 }
 
 /* Contact us */
