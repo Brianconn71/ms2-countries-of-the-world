@@ -5,10 +5,9 @@ const question = document.getElementById('question');
 const startBtn = document.getElementById('start-btn');
 const questionContainer = document.getElementById('question-container');
 const answers = Array.from(document.getElementsByClassName('answer-btn'));
-const questionCounterText = document.getElementById('questionCounter');
+const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score')
-
-
+const fullBar = document.getElementById('full-bar')
 const max_questions = 3;
 const correct_bonus = 10
 
@@ -66,8 +65,9 @@ function nextQuestion(){
         return window.location.assign('/end.html')
     }
       questionCounter++
-      questionCounterText.innerText = `${questionCounter}/${max_questions}`;
-    
+      progressText.innerText = `Question ${questionCounter}/${max_questions}`;
+      // udate the progress bar
+      fullBar.style.width = `${(questionCounter / max_questions)* 100}%`
 
       const questionIndex = Math.floor(Math.random() * availableQuestions.length)
       currentQuestion = availableQuestions[questionIndex]
