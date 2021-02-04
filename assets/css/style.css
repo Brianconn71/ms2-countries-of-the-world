@@ -252,9 +252,9 @@ button.menu-toggler:focus{
 .question{
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 0.8rem;
+    font-size: 1.8rem;
     font-weight: 600;
-    color: #262730;
+    color: #fcecc9;
 }
 .answer-btns{
     display: grid;
@@ -299,10 +299,10 @@ button.menu-toggler:focus{
 }
 
 .correct{
-    background-color: green
+    background-color: #008000;
 }
 .incorrect{
-    background-color: red;
+    background-color: #c21807;
 }
 /* scroe and question display on quiz */
 #score-display{
@@ -312,22 +312,59 @@ button.menu-toggler:focus{
 .score{
     font-size: 1.2rem;
     text-align: center;
+    color: #fcecc9
 }
 .score-text{
     font-size: 1.2rem;
     text-align: center;
+    color: #fcecc9;
 }
 #progressBar{
-    width: 20rem;
+    width: 10rem;
     height: 2rem;
-    border: 0.1rem solid blue;
+    border: 0.1rem solid #ED691D;
     margin-top: 0.8rem;
     margin-bottom: 1rem;
 }
 #full-bar{
     height: 1.8rem;
-    background-color: #337BBD;
+    background-color: rgba(237, 105, 29, 0.6);
     width: 0%;
+}
+#finishedGame{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color: #fcecc9;
+}
+.finishHeading{
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.finishText{
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+.playAgainText{
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+.playAgain{
+    background-color: #ED691D;
+    color: #fcecc9;
+    border-radius: 30px;
+    width: 30%;
+    padding: 0.5rem;
+}
+.playAgain:hover{
+    color: #fcecc9;
+    transform: scale(1.2);
 }
 
 /* Contact us */
