@@ -90,6 +90,54 @@ They can study for the quiz by using the links and the search bar to find out in
 
 # Deployment
 
+The project was developed using the [Gitpod IDE](https://www.gitpod.io/), it was committed to git and pushed to github using the built-in function within Gitpod.
+
+In order to deploy this site to Github pages from its [Github Repository](https://github.com/Brianconn71/ms2-countries-of-the-world), the following steps were taken.
+
+1. Log into [Github](https://github.com)
+2. From the list of available repositories, select Brianconn71/ms2-countries-of-the-world.
+3. From the menu items near the top of the page, select Settings.
+4. Scroll down to the GitHub Pages section.
+5. Under Source, click the drop-down menu labelled None and select Master.
+6. On selecting Master Branch the page is automatically refreshed, the website is then automatically deployed.
+7. Scroll back down towards GitHub Pages section and retrieve the link to the deployed website.
+
+#### How to run the project locally
+
+To clone this project into gitpod you will need:
+
+1. A GitHub account. [Create one here](https://github.com)
+2. Use the Chrome Browser.
+
+Then follow the below steps:
+
+1. Install the [Gitpod Browser Extension for Chrome](https://www.gitpod.io/docs/browser-extension/).
+2. After Installation, restart the browser.
+3. Log into [Gitpod](https://gitpod.io) with your gitpod account.
+4. Navigate to the [Project Repository](https://github.com/Brianconn71/ms2-countries-of-the-world) on GitHub.
+5. Click on the green Gitpod button in the top right corner of the repository.
+6. This will trigger a new Gitpod workspace to be created from the code in GitHub where you can work locally.
+
+To work on this project within a local IDE such as VSCode, Pycharm etc:
+
+1. Follow this link to the [Project GitHub Repository](https://github.com/Brianconn71/ms2-countries-of-the-world).
+
+2. Under the Repository name, click "Clone or Download".
+
+3. In the Clone with HTTPs section, copy the clone URL for the repository.
+
+4. In your local IDE, Open the Terminal.
+
+5. Change the current working directory to the location where you want the cloned directory to be made.
+
+6. Type git clone , and then paste the Url you copied in Step 3.
+
+git clone https://github.com/USERNAME/REPOSITORY
+
+7. Press Enter. Your local clone will then be created.
+
+Further reading and troubleshooting on cloning a repository from GitHub can be found [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
 # Credits
 
 * carousel images on header
