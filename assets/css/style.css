@@ -521,6 +521,47 @@ select.select-inputs:focus{
     color: #DB3C5A;
 }
 
+/* 404 page styling */
+.error-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.error-head{
+    color: #262730;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2.2rem;
+}
+.error-text{
+    color: #262730;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 2.2rem;;
+}
+.error-btn{
+    background-color: #ED691D;
+    color: #fcecc9;
+    width: 30%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
+}
+.error-btn:focus{
+    outline: none;;
+}
+.error-btn:active{
+    transform: translate(0, 0.4rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.2);
+}
+
 /* Media Queries */
 @media only screen and (min-width: 360px){
     .start-btn{
