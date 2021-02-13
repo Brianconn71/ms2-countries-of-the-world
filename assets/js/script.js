@@ -55,3 +55,9 @@ function sendMail(contactForm){
     return false;
 }
 
+// This function will return the user to the homepage if a button is clicked when a 404 error occurs
+
+function returnHome() {
+    window.location.href = "index.html"
+}
+
