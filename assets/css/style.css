@@ -78,6 +78,7 @@ button.menu-toggler:focus{
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    padding: 1rem;
     width: 100%;
     top: 70%;
 }
@@ -114,7 +115,7 @@ button.menu-toggler:focus{
     display: none;
     position: fixed;
     bottom: 4rem;
-    right: 2rem;
+    right: 0.5rem;
     opacity: 0.7;
     z-index: 999;
     border: none;
@@ -257,7 +258,7 @@ button.menu-toggler:focus{
 .question{
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #fcecc9;
 }
@@ -268,7 +269,7 @@ button.menu-toggler:focus{
     margin: 1rem 0rem;
 }
 .answer-btn{
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     background-color: #C0BDA5;
     border: 2px solid #261447;
@@ -315,7 +316,7 @@ button.menu-toggler:focus{
     justify-content: space-between;
 }
 .score{
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     text-align: center;
     color: #fcecc9
 }
@@ -325,7 +326,7 @@ button.menu-toggler:focus{
     color: #fcecc9;
 }
 #progressBar{
-    width: 10rem;
+    width: 5rem;
     height: 2rem;
     border: 0.1rem solid #ED691D;
     margin-top: 0.8rem;
@@ -348,23 +349,30 @@ button.menu-toggler:focus{
     margin-bottom: 2rem;
     text-transform: capitalize;
     text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
     font-family: 'Poppins', sans-serif;
 }
 .finishText{
     margin-bottom: 2rem;
     text-transform: capitalize;
     font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 1rem;
 }
 .playAgainText{
     margin-bottom: 2rem;
     text-transform: capitalize;
     font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    padding: 1rem;
 }
 .playAgain{
     background-color: #ED691D;
     color: #fcecc9;
     border-radius: 30px;
-    width: 30%;
+    width: 80%;
     padding: 0.5rem;
 }
 .playAgain:hover{
@@ -583,6 +591,8 @@ select.select-inputs:focus{
         font-size: 0.8rem;
     }
 }
+
+
 @media only screen and (min-width: 600px){
     .search-text{
         font-size: 1.8rem;
@@ -605,12 +615,46 @@ select.select-inputs:focus{
     .error-text{
         font-size: 1rem;
     }
+    .question{
+        font-size: 1.8rem;
+    }
+    .answer-btn{
+        font-size: 1.2rem;
+    }
+    .finishHeading{
+        font-size: 2rem;
+    }
+    .finishText{
+        font-size: 1.2rem;
+    }
+    .playAgainText{
+        font-size: 1.2rem;
+    }
+    .playAgain{
+        width: 50%;
+    }
 }
+
 @media only screen and (min-width: 1000px){
     .error-text{
         font-size: 1.2rem;
     }
     .nav-logo{
         min-width: 	50%;
+    }
+    .score{
+        font-size: 1.2rem;
+    }
+    .score-text{
+        font-size: 1.8rem;
+    }
+    #progressBar{
+        width: 10rem;
+    }
+    .answer-btns{
+        grid-template-columns: repeat(2, auto)
+    }
+    .playAgain{
+        width: 30%;
     }
 }
