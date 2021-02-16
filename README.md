@@ -86,6 +86,69 @@ They can study for the quiz by using the links and the search bar to find out in
 
 # Technologies Used
 
+* [HTML5](https://html.com/html5/)
+    * HTML5 was used to make the index.html file for the site.
+
+* [CSS3](https://www.tutorialrepublic.com/css-tutorial/)
+    * Css3 was used to sstyle the website.
+
+* [Javascript](https://www.javascript.com/)
+    * Javascript was used to add functionality to the site.
+
+* [jQuery](https://jquery.com/)
+    * Javascript library jQuery was used to help shorten and understand the javascript language. Also, used to add functionality to the site.
+
+* [Bootstrap](https://getbootstrap.com/)
+    * Bootstrap was used as a framework on the site. It aided the responsiveness of the site and some components are utilised on the site too.
+
+* [Gitpod](https://www.gitpod.io/)
+    * Gitpod was the IDE used to develop the site
+
+* [Github](https://www.github.com/)
+    * Github was used to host and store my project site.
+
+* [Git](https://git-scm.com/)
+    * Git was used as version control on the site. Git commands were used to add, commit and push the site aswell as delete.
+
+* [Figma](https://www.figma.com/)
+    * Figma was used in the creation of the wireframes for the site.
+
+* [Google Fonts](https://fonts.google.com/)
+    * I used two different fonts in the making of the site, Poppins and Raleway, both fonts were taken from google fonts.
+
+* [Font Awesome](https://fontawesome.com/)
+    * Font awesome was used on the site, primarily for the icons in the footer.
+
+* [W3](https://www.w3schools.com/)
+    * W3 was used throughout the project as a means for troubleshooting issues relating to html, css and javascript.
+
+* [Favicon](https://favicon.io/)
+    * Favicon was used to make and add a favicon to the site.
+
+* [TinyPNG](https://tinypng.com/)
+    * TinyPNG was used to compress and reduce the size of the images on the site.
+
+* [Autoprefixer](https://autoprefixer.github.io/)
+    * Autoprefixer was used to parse my css fie and add vendor prefixes.
+
+* [Coolors.co](https://coolors.co/)
+    * Coolors was used to come up with a color theme for the site
+
+* [Jshint](https://jshint.com/)
+    * Jshint was used to test the viability of my Javascript files throughout the project
+
+* [W3c Validator](https://validator.w3.org/)
+    * w3c validator was used to test my html files and css files
+
+* [Email.js](https://www.emailjs.com/)
+    * Emailjs was used in the contact form section to allow for users to send a message
+
+* [Open Trivia Database](https://opentdb.com/api_config.php)
+    * Open Trivia Database was the api used in the quiz game
+
+* [ProgrammabelWeb](https://www.programmableweb.com/)
+    * ProgrammableWeb was the api used in the continent buttons section and the search bar to search for a country.
+
 # Testing
 
 # Deployment
