@@ -1,4 +1,5 @@
 // function for scrolling back to the top of the page if the user clicks on the return to top button
+// Found advice and guidance on how to best make a return to top page here: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 scrollButton = document.getElementById('pageTop');
 
 window.onscroll = function() {scrollToTop()};
@@ -22,6 +23,12 @@ function topOfPage(){
 $(document).ready(function(){
     $("#hdr-cta-btn").click(function(){
         window.location.href = '#search-for-country'
+    });
+});   
+
+$(document).ready(function(){
+    $("#take-to-quiz").click(function(){
+        window.location.href = '#quiz-game'
     });
 });   
 

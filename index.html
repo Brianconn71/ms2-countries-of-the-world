@@ -15,10 +15,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Countries of the world</title>
 
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
-    <script type="text/javascript">
+    <script>
         (function(){
             emailjs.init("user_EiLAIeYYMhRgVEmtnMA7P");
         })();
@@ -69,9 +68,9 @@
             <span class="sr-only">Next</span>
             </a>
         </div>
-        <div class="btn-display" id="hdr-cta-btn">
-            <button class="btn-cta" id="discover">Discover the world</button>
-            <button class="btn-cta">Take our quiz!</button>
+        <div class="btn-display">
+            <button class="btn-cta" id="hdr-cta-btn">Discover the world</button>
+            <button class="btn-cta" id="take-to-quiz">Take our quiz!</button>
         </div>
     </header>
 
@@ -174,7 +173,7 @@
                 <br>
                 <div class="form-floating form-groups">
                     <label for="reason" class="labels">What is the message regarding:</label>
-                    <select name="reason" id="reason" class="form-select select-inputs" required>
+                    <select name="reason" id="reason" class="form-select select-inputs" size="3" required>
                         <option value="general-query">General Query</option>
                         <option value="feedback">Feedback on the site</option>
                         <option value="high-score">Send us your high score!</option>
