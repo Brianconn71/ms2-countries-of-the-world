@@ -2,13 +2,19 @@
 
 /* Wanted to make the scrolling on the site smoother so found an answer here https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2 */
 *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     scroll-behavior: smooth;
 }
 body{
     background-color: #CC978E;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 100%;
     width:100%;
     margin: 0;
@@ -40,7 +46,8 @@ body{
 }
 nav a:hover{
     color: #fcecc9;
-    filter: brightness(140%);
+    -webkit-filter: brightness(140%);
+            filter: brightness(140%);
 }
 .nav-link.nav-menu-item{
     color: #fcecc9;
@@ -63,12 +70,18 @@ button.menu-toggler:focus{
     height: 80vh;
     width: 100%;
     position: relative;
-    box-shadow: 3px 3px 6px rgba(15, 15, 15, 0.4);
+    -webkit-box-shadow: 3px 3px 6px rgba(15, 15, 15, 0.4);
+            box-shadow: 3px 3px 6px rgba(15, 15, 15, 0.4);
     overflow: hidden;
 }
 /* Added a fader animation to the header which I got help on here https://blog.hubspot.com/website/css-fade-in  */
 .fader{
-    animation: fader ease 5s;
+    -webkit-animation: fader ease 5s;
+            animation: fader ease 5s;
+}
+@-webkit-keyframes fader{
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 @keyframes fader{
     0% {opacity:0;}
@@ -76,10 +89,17 @@ button.menu-toggler:focus{
 }
 .btn-display{
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 1rem;
     width: 100%;
     top: 70%;
@@ -97,20 +117,25 @@ button.menu-toggler:focus{
     padding: 1rem 1.2rem;
     cursor: pointer;
     margin-bottom: 1rem;
-    box-shadow: 0 0.4rem rgba(15, 15, 15, 0.2);
+    -webkit-box-shadow: 0 0.4rem rgba(15, 15, 15, 0.2);
+            box-shadow: 0 0.4rem rgba(15, 15, 15, 0.2);
     z-index: 1000;
 }
 .btn-cta:focus{
     outline: none;
 }
 .btn-cta:active{
-    transform: translate(0, 0.3rem);
-    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.2);
+    -webkit-transform: translate(0, 0.3rem);
+        -ms-transform: translate(0, 0.3rem);
+            transform: translate(0, 0.3rem);
+    -webkit-box-shadow: 0 0.1rem rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0.1rem rgba(255, 255, 255, 0.2);
 }
 .header-carousel-image{
     height: 100%;
     max-width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 /* Styling for the return to top of the page button that displays as the user secrolls */
 #pageTop{
@@ -130,7 +155,8 @@ button.menu-toggler:focus{
     font-size: 0.8rem;
 }
 #pageTop:hover{
-    filter: brightness(120%)
+    -webkit-filter: brightness(120%);
+            filter: brightness(120%)
 }
 /* Search box section */
 .search-for-country{
@@ -160,6 +186,18 @@ button.menu-toggler:focus{
     color: #262730;
     opacity: 0.7;
 }
+.search::-webkit-input-placeholder{
+    color: #262730;
+}
+.search::-moz-placeholder{
+    color: #262730;
+}
+.search:-ms-input-placeholder{
+    color: #262730;
+}
+.search::-ms-input-placeholder{
+    color: #262730;
+}
 .search::placeholder{
     color: #262730;
 }
@@ -174,7 +212,8 @@ button.menu-toggler:focus{
     border-radius: 10px;
     background-color:#FF3864;
     border: none;
-    box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
+    -webkit-box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
+            box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
 }
 .country-title{
     font-family: 'Poppins', sans-serif;
@@ -193,7 +232,8 @@ button.menu-toggler:focus{
     color: #fcecc9;
 }
 .button-container{
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100%;
     padding-bottom: 4rem;
 }
@@ -206,15 +246,20 @@ button.menu-toggler:focus{
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     display: block;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     border: transparent;
     padding: 0.5rem 1.2rem;
     margin: 1rem;
-    box-shadow: 0 0.4rem rgba(15, 15, 15, 0.2);
+    -webkit-box-shadow: 0 0.4rem rgba(15, 15, 15, 0.2);
+            box-shadow: 0 0.4rem rgba(15, 15, 15, 0.2);
 }
 .continent-btn:active{
-    transform: translate(0, 0.3rem);
-    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.2);
+    -webkit-transform: translate(0, 0.3rem);
+        -ms-transform: translate(0, 0.3rem);
+            transform: translate(0, 0.3rem);
+    -webkit-box-shadow: 0 0.1rem rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0.1rem rgba(255, 255, 255, 0.2);
 }
 .continent-btn:focus{
     outline: none;
@@ -228,7 +273,8 @@ button.menu-toggler:focus{
     margin: 1.5rem auto;
     padding: 1rem;
     border-radius: 20px;
-    box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.3);
+    -webkit-box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.3);
+            box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.3);
 }
 #close{
     float: right;
@@ -237,14 +283,21 @@ button.menu-toggler:focus{
     font-size: 0.8rem;
     border-radius: 10px;
     outline: none;
-    box-shadow: 0 0.2rem rgba(15, 15, 15, 0.2);
+    -webkit-box-shadow: 0 0.2rem rgba(15, 15, 15, 0.2);
+            box-shadow: 0 0.2rem rgba(15, 15, 15, 0.2);
 }
 
 /* Quiz game section */
 .quiz-game{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-color: #CC978E;
     margin-bottom: 5rem;
 }
@@ -255,7 +308,8 @@ button.menu-toggler:focus{
     background-color: #DB3C5A;
     border-radius: 30px;
     padding: 1rem;
-    box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
+    -webkit-box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
+            box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
 }
 .question{
     text-align: center;
@@ -265,7 +319,9 @@ button.menu-toggler:focus{
     color: #fcecc9;
 }
 .answer-btns{
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: auto;
     grid-template-columns: repeat(1, auto);
     gap: 1rem;
     margin: 1rem 0rem;
@@ -283,7 +339,8 @@ button.menu-toggler:focus{
     outline: none;
 }
 .answer-btn:hover{
-    filter: brightness(120%)
+    -webkit-filter: brightness(120%);
+            filter: brightness(120%)
 }
 .start-btn, .next-btn{
     background-color: rgb(3, 226, 226);
@@ -296,12 +353,19 @@ button.menu-toggler:focus{
     word-spacing: 1rem;
 }
 .start-btn:hover, .next-btn:hover{
-    filter: brightness(120%)
+    -webkit-filter: brightness(120%);
+            filter: brightness(120%)
 }
 .control-btns{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center; 
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; 
     height: 100%;
     width: 100%;
 }
@@ -314,8 +378,12 @@ button.menu-toggler:focus{
 }
 /* scroe and question display on quiz */
 #score-display{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .score{
     font-size: 0.8rem;
@@ -340,10 +408,19 @@ button.menu-toggler:focus{
     width: 0%;
 }
 #finishedGame{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 1rem;
     color: #fcecc9;
 }
@@ -379,7 +456,9 @@ button.menu-toggler:focus{
 }
 .playAgain:hover{
     color: #fcecc9;
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
 }
 
 /* Contact us */
@@ -392,7 +471,8 @@ button.menu-toggler:focus{
     height: auto;
     border-radius: 30px;
     padding: 3rem 1rem;
-    box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
+    -webkit-box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
+            box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
 }
 .contact-section-title{
     width: 100%;
@@ -420,7 +500,20 @@ input.inputs{
     border-color: transparent;
     border-radius: 20px;
     padding: 1rem;
-    box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
+    -webkit-box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
+            box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
+}
+.inputs::-webkit-input-placeholder{
+    color: #262730;
+}
+.inputs::-moz-placeholder{
+    color: #262730;
+}
+.inputs:-ms-input-placeholder{
+    color: #262730;
+}
+.inputs::-ms-input-placeholder{
+    color: #262730;
 }
 .inputs::placeholder{
     color: #262730;
@@ -434,7 +527,8 @@ select.select-inputs{
     margin-left: 1rem;
     padding: 0.5rem;
     border-radius: 20px;
-    box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
+    -webkit-box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
+            box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
 }
 select.select-inputs:focus{
     outline: none;
@@ -447,7 +541,20 @@ select.select-inputs:focus{
     resize: vertical;
     padding: 1rem 0.5rem;
     border-radius: 20px;
-    box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
+    -webkit-box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
+            box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
+}
+.txt-area-input::-webkit-input-placeholder{
+    color: #262730;
+}
+.txt-area-input::-moz-placeholder{
+    color: #262730;
+}
+.txt-area-input:-ms-input-placeholder{
+    color: #262730;
+}
+.txt-area-input::-ms-input-placeholder{
+    color: #262730;
 }
 .txt-area-input::placeholder{
     color: #262730;
@@ -465,19 +572,29 @@ select.select-inputs:focus{
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
+    -webkit-box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
+            box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
 }
 .submit-btn:focus{
     outline: none;
 }
 .submit-btn:active{
-    transform: translate(0, 0.3rem);
-    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.2);
+    -webkit-transform: translate(0, 0.3rem);
+        -ms-transform: translate(0, 0.3rem);
+            transform: translate(0, 0.3rem);
+    -webkit-box-shadow: 0 0.1rem rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0.1rem rgba(255, 255, 255, 0.2);
 }
 .submit-form{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: auto;
     padding: 4rem;
     margin-bottom: 10rem;
@@ -494,13 +611,23 @@ select.select-inputs:focus{
     background-color: #261447;
     height: 3.5rem;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .copyright{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
     margin-left: 1.2rem;
 }
 .cp-symbol{
@@ -513,18 +640,28 @@ select.select-inputs:focus{
     margin-left: 0.3rem;;
 }
 .social-links{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     width: 80%;
 }
 .social-media-links{
     color: #fcecc9;
     font-size: 1rem;
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
 }
 .social-media-links:hover{
-    transform: scale(1.1)
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1)
 }
 #facebook-link:hover{
     color: #337BBD;
@@ -538,10 +675,19 @@ select.select-inputs:focus{
 
 /* 404 page styling */
 .error-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 100vh;
     width: 80%;
     margin: 0 auto;
@@ -571,14 +717,18 @@ select.select-inputs:focus{
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
+    -webkit-box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
+            box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
 }
 .error-btn:focus{
     outline: none;;
 }
 .error-btn:active{
-    transform: translate(0, 0.4rem);
-    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.2);
+    -webkit-transform: translate(0, 0.4rem);
+        -ms-transform: translate(0, 0.4rem);
+            transform: translate(0, 0.4rem);
+    -webkit-box-shadow: 0 0.1rem rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0.1rem rgba(255, 255, 255, 0.2);
 }
 
 /* Media Queries */
