@@ -53,10 +53,8 @@ function sendMail(contactForm){
         "message": contactForm.message.value,
     }).then(
         function(response){
-            console.log("success", response);
         },
         function(error){
-            console.log("Fail", error)
         }
     )
     return false;

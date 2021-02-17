@@ -48,13 +48,10 @@ fetch('https://opentdb.com/api.php?amount=10&category=22&difficulty=easy&type=mu
              answerChoices.forEach((choice, index) => {
                  formattedQuestion['choice' + (index +1)] = choice
               });
-             
-             //  console.log(formattedQuestion)
               return formattedQuestion;
           });
      })
      .catch((err) => {
-         console.error(err)
 });
 
 
@@ -123,8 +120,6 @@ function incrementScore(num){
     // adding the last score saved in the local storage to the final score displayed on the end screen of the quiz
     finalScore.innerText = score;
 }
-
-
 
 // my own custom function to start the game again once a user completes the quiz 
 function playAgain(){

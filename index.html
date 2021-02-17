@@ -76,7 +76,7 @@
 
     <!-- Creating a scroll to top button that only dispalyas as the user scrolls down the page -->
     <!-- Inspiration was taken from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp -->
-    <button onclick="topOfPage()" id="pageTop" title="Return to Top of the Page" >Return to Top</button>
+    <button onclick="topOfPage()" id="pageTop" title="Return to Top of the Page"><i class="fas fa-arrow-up"></i></button>
 
     <!-- Calling the api and search bar section -->
     <section class="search-for-country" id="search-for-country">
@@ -137,16 +137,15 @@
             </div>
             <div class="control-btns">
                 <button class="start-btn btn" id="start-btn">Start the Quiz!</button>
-                <button class="next-btn btn hide">Next Question</button>
             </div>
             <div class="finshedGame flex-center hide" id="finishedGame">
-                <h1 class="finishHeading">Congratulations on finishing the Geography Quiz!</h1>
+                <h1 class="finishHeading">Congratulations on finishing the Quiz!</h1>
                 <h3 class="finishText">You achieved a score of: <span id="finalScore"></span> </h3>
                 <p class="playAgainText">Would you like to play again?</p>
                 <button class="btn playAgain" onclick="playAgain()">Play Again</button>
             </div>
         </div>
-
+ 
     </section>
 
     <!-- Contact us section -->

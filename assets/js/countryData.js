@@ -39,34 +39,33 @@ $(document).ready(function(){
 // had trouble accessing my arrays a solution i found that worked was https://stackoverflow.com/questions/16576457/accessing-a-javascripts-object-property-without-knowing-that-property-name
 
 // also figured out how to place my close button in the right corner here: https://stackoverflow.com/questions/6632340/place-a-button-right-aligned
-        $('#africa-btn').on("click",function(event){
-            
-            fetch('https://restcountries.eu/rest/v2/region/africa')
-            .then((r) => r.json())
-            .then((data) =>  data.forEach(function(m){
-                    document.getElementById('africa').innerHTML += `
-                        <div class="container" id="row-country">
-                                <div class="row">
-                                    <div class="col-3 d-flex align-items-center">
-                                        <img src="${m[Object.keys(m)[21]]}" class="img-fluid" alt="flags of africa">
-                                    </div>
-                                    <div class="col-9">
-                                    <button id="close" onclick="closeBtnAfrica()"><i class="fas fa-window-close"></i></button>
-                                        <h5 class="country-title">${m[Object.keys(m)[0]]}</h5>
-                                        <p class="card-text">
-                                            <ul class="basic-info">
-                                                <li class="general-info"><strong>Capital City:</strong> ${m[Object.keys(m)[5]]}</li>
-                                                <li class="general-info"><strong>Sub-Continent:</strong> ${m[Object.keys(m)[8]]}</li>
-                                                <li class="general-info"><strong>Population:</strong> ${m[Object.keys(m)[9]]}</li>
-                                            </ul>
-                                        </p>
-                                    </div>
-                                </div>
+$('#africa-btn').on("click",function(event){
+    fetch('https://restcountries.eu/rest/v2/region/africa')
+    .then((r) => r.json())
+    .then((data) =>  data.forEach(function(m){
+            document.getElementById('africa').innerHTML += `
+                <div class="container" id="row-country">
+                    <div class="row">
+                        <div class="col-3 d-flex align-items-center">
+                            <img src="${m[Object.keys(m)[21]]}" class="img-fluid" alt="flags of africa">
+                        </div>
+                        <div class="col-9">
+                            <button id="close" onclick="closeBtnAfrica()"><i class="fas fa-window-close"></i></button>
+                            <h5 class="country-title">${m[Object.keys(m)[0]]}</h5>
+                            <p class="card-text">
+                                <ul class="basic-info">
+                                    <li class="general-info"><strong>Capital City:</strong> ${m[Object.keys(m)[5]]}</li>
+                                    <li class="general-info"><strong>Sub-Continent:</strong> ${m[Object.keys(m)[8]]}</li>
+                                    <li class="general-info"><strong>Population:</strong> ${m[Object.keys(m)[9]]}</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
                                 
-                        </div>              
+                </div>              
                     `
                 }))
-            .catch((e) => console.log(e));
+            .catch((e));
         })
 
 $(document).ready(function(){
@@ -97,7 +96,7 @@ $(document).ready(function(){
                         </div>              
                     `
                 }))
-            .catch((e) => console.log(e));
+            .catch((e));
             })
 })
 
@@ -129,7 +128,7 @@ $(document).ready(function(){
                         </div>              
                     `
                 }))
-            .catch((e) => console.log(e));
+            .catch((e));
         })
 })
 
@@ -161,7 +160,7 @@ $(document).ready(function(){
                         </div>              
                     `
                 }))
-            .catch((e) => console.log(e));
+            .catch((e));
         })
 })
 $(document).ready(function(){
@@ -191,7 +190,7 @@ $(document).ready(function(){
                         </div>              
                         `
                 }))
-  .catch((e) => console.log('Booo'));
+  .catch((e));
         })
 })
 

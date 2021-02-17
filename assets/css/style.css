@@ -7,7 +7,7 @@
     scroll-behavior: smooth;
 }
 body{
-    background-color: #CC978E;
+    background-color: #cdcdcd;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -151,7 +151,7 @@ button.menu-toggler:focus{
     color: #fcecc9;
     cursor: pointer;
     padding: 0.5rem;
-    border-radius: 30px;
+    border-radius: 10px;
     font-size: 0.8rem;
 }
 #pageTop:hover{
@@ -298,14 +298,13 @@ button.menu-toggler:focus{
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: #CC978E;
     margin-bottom: 5rem;
 }
 .quiz-container{
     height: auto;
     width: 80%;
     max-width: 80%;
-    background-color: #DB3C5A;
+    background-color: #cc978e;
     border-radius: 30px;
     padding: 1rem;
     -webkit-box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
@@ -316,7 +315,7 @@ button.menu-toggler:focus{
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
-    color: #fcecc9;
+    color: #262730;
 }
 .answer-btns{
     display: -ms-grid;
@@ -342,8 +341,9 @@ button.menu-toggler:focus{
     -webkit-filter: brightness(120%);
             filter: brightness(120%)
 }
-.start-btn, .next-btn{
-    background-color: rgb(3, 226, 226);
+.start-btn{
+    background-color: #ed691d;
+    color: #fcecc9;
     font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -352,7 +352,8 @@ button.menu-toggler:focus{
     padding: 1.5rem;
     word-spacing: 1rem;
 }
-.start-btn:hover, .next-btn:hover{
+.start-btn:hover{
+    color: #fcecc9;
     -webkit-filter: brightness(120%);
             filter: brightness(120%)
 }
@@ -388,12 +389,12 @@ button.menu-toggler:focus{
 .score{
     font-size: 0.8rem;
     text-align: center;
-    color: #fcecc9
+    color: #262730;
 }
 .score-text{
     font-size: 1.2rem;
     text-align: center;
-    color: #fcecc9;
+    color: #262730;
 }
 #progressBar{
     width: 5rem;
@@ -422,7 +423,7 @@ button.menu-toggler:focus{
         -ms-flex-pack: center;
             justify-content: center;
     padding: 1rem;
-    color: #fcecc9;
+    color: #262730;
 }
 .finishHeading{
     margin-bottom: 2rem;
