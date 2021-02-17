@@ -4,6 +4,8 @@
 *{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+}
+html{
     scroll-behavior: smooth;
 }
 body{
@@ -67,7 +69,7 @@ button.menu-toggler:focus{
 }
 /* Header */ 
 .page-hdr{
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     position: relative;
     -webkit-box-shadow: 3px 3px 6px rgba(15, 15, 15, 0.4);
@@ -110,7 +112,7 @@ button.menu-toggler:focus{
     color: #fcecc9;
     border-radius: 30px;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     display: block;
     border: transparent;
     margin: 0 auto;
@@ -130,6 +132,9 @@ button.menu-toggler:focus{
             transform: translate(0, 0.3rem);
     -webkit-box-shadow: 0 0.1rem rgba(255, 255, 255, 0.2);
             box-shadow: 0 0.1rem rgba(255, 255, 255, 0.2);
+}
+#hdr-cta-btn{
+    background-color: rgba(237, 105, 29, 0.8)
 }
 .header-carousel-image{
     height: 100%;
@@ -162,6 +167,8 @@ button.menu-toggler:focus{
 .search-for-country{
     height: auto;
     margin-top: 1.2rem;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
 }
 .search-text{
     color: #262730;
@@ -307,6 +314,8 @@ button.menu-toggler:focus{
     background-color: #cc978e;
     border-radius: 30px;
     padding: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     -webkit-box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
             box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
 }
@@ -742,6 +751,9 @@ select.select-inputs:focus{
     }
     .cp-text, .cp-symbol{
         font-size: 0.8rem;
+    }
+    .btn-cta{
+        font-size: 1.2rem;
     }
 }
 

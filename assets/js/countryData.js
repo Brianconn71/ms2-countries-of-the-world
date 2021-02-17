@@ -13,8 +13,9 @@ $(document).ready(function(){
         }).done(function(data){
             $('#country-search').html(`
             <div class="card country-card">
-                <img src="${data[0].flag}" class="card-img-top" alt="...">
+                <img src="${data[0].flag}" class="card-img-top" alt="${data[0].name} flag">
                 <div class="card-body">
+                    <button id="close" onclick="closeBtnSearch()"><i class="fas fa-window-close"></i></button>
                     <h5 class="card-title country-title">${data[0].name}</h5>
                     <p class="card-text">
                         <ul class="basic-info">
@@ -196,6 +197,9 @@ $(document).ready(function(){
 
 
 //functions to close the div containing the conitinent country data upon clicking the close button on the top right corner of the elements
+function closeBtnSearch(){
+    document.getElementById('country-search').innerHTML = ""
+}
 function closeBtnAfrica(){
      document.getElementById('africa').innerHTML = "";
 }
