@@ -3,14 +3,14 @@
 
 // Some issues were fixed with jQuery here https://stackoverflow.com/questions/34280868/search-bar-with-jquery & https://javascript.info/fetch and https://stackoverflow.com/questions/43797556/jquery-with-button-onclick-functionquestions/43797556/jquery-with-button-onclick-function
 // I also got guidance and advice here https://www.youtube.com/watch?v=lIKrfLWNsUI&t=1147s&ab_channel=TraversyMedia
-$(document).ready(function(){
-    $('#search').on('keyup', function(event){
+$(document).ready(function() {
+    $('#search').on('keyup', function(event) {
         let searchValue = event.target.value;
 
         // Make ajax request
         $.ajax({
             url: `https://restcountries.eu/rest/v2/name/${searchValue}`,
-        }).done(function(data){
+        }).done(function(data) {
             $('#country-search').html(`
             <div class="card country-card">
                 <img src="${data[0].flag}" class="card-img-top" alt="${data[0].name} flag">
@@ -40,39 +40,42 @@ $(document).ready(function(){
 // had trouble accessing my arrays a solution i found that worked was https://stackoverflow.com/questions/16576457/accessing-a-javascripts-object-property-without-knowing-that-property-name
 
 // also figured out how to place my close button in the right corner here: https://stackoverflow.com/questions/6632340/place-a-button-right-aligned
-$('#africa-btn').on("click",function(event){
-    fetch('https://restcountries.eu/rest/v2/region/africa')
-    .then((r) => r.json())
-    .then((data) =>  data.forEach(function(m){
-            document.getElementById('africa').innerHTML += `
-                <div class="container" id="row-country">
-                    <div class="row">
-                        <div class="col-3 d-flex align-items-center">
-                            <img src="${m[Object.keys(m)[21]]}" class="img-fluid" alt="flags of africa">
-                        </div>
-                        <div class="col-9">
-                            <button id="close" onclick="closeBtnAfrica()"><i class="fas fa-window-close"></i></button>
-                            <h5 class="country-title">${m[Object.keys(m)[0]]}</h5>
-                            <p class="card-text">
-                                <ul class="basic-info">
-                                    <li class="general-info"><strong>Capital City:</strong> ${m[Object.keys(m)[5]]}</li>
-                                    <li class="general-info"><strong>Sub-Continent:</strong> ${m[Object.keys(m)[8]]}</li>
-                                    <li class="general-info"><strong>Population:</strong> ${m[Object.keys(m)[9]]}</li>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                                
-                </div>              
-                    `
-                }))
-            .catch((e));
-        })
+
+// initially, Had planned to use one document.ready statement but the calls were only being made in order and I didn't want that so the only solution I found was using multiple document.ready calls.
 
 $(document).ready(function(){
-        $('#asia-btn').on("click",function(event){
+        $('#africa-btn').on("click",function(event){
             // Make ajax request
-           fetch('https://restcountries.eu/rest/v2/region/asia')
+             fetch('https://restcountries.eu/rest/v2/region/africa')
+            .then((r) => r.json())
+            .then((data) =>  data.forEach(function(m){
+                    document.getElementById('africa').innerHTML += `
+                        <div class="container" id="row-country">
+                                <div class="row">
+                                    <div class="col-3 d-flex align-items-center">
+                                        <img src="${m[Object.keys(m)[21]]}" class="img-fluid" alt="flags of africa">
+                                    </div>
+                                    <div class="col-9">
+                                        <button id="close" onclick="closeBtnAfrica()"><i class="fas fa-window-close"></i></button>
+                                        <h5 class="country-title">${m[Object.keys(m)[0]]}</h5>
+                                        <p class="card-text">
+                                            <ul class="basic-info">
+                                                <li class="general-info">Capital City: ${m[Object.keys(m)[5]]}</li>
+                                                <li class="general-info">Sub-Continent: ${m[Object.keys(m)[8]]}</li>
+                                                <li class="general-info">Population: ${m[Object.keys(m)[9]]}</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                        </div>              
+                    `
+                }))
+        });
+})
+function returnAsia(){
+    // Make ajax request
+             fetch('https://restcountries.eu/rest/v2/region/asia')
             .then((r) => r.json())
             .then((data) =>  data.forEach(function(m){
                     document.getElementById('asia').innerHTML += `
@@ -98,13 +101,11 @@ $(document).ready(function(){
                     `
                 }))
             .catch((e));
-            })
-})
+        // })
+};
 
-$(document).ready(function(){
-        $('#europe-btn').on("click",function(event){
-            // Make ajax request
-           fetch('https://restcountries.eu/rest/v2/region/europe')
+function returnEurope(){
+    fetch('https://restcountries.eu/rest/v2/region/europe')
             .then((r) => r.json())
             .then((data) =>  data.forEach(function(m){
                     document.getElementById('europe').innerHTML += `
@@ -130,8 +131,39 @@ $(document).ready(function(){
                     `
                 }))
             .catch((e));
-        })
-})
+}
+
+// $(document).ready(function(){
+//         $('#europe-btn').on("click",function(event){
+//             // Make ajax request
+//            fetch('https://restcountries.eu/rest/v2/region/europe')
+//             .then((r) => r.json())
+//             .then((data) =>  data.forEach(function(m){
+//                     document.getElementById('europe').innerHTML += `
+//                         <div class="container" id="row-country">
+//                                 <div class="row">
+//                                     <div class="col-3 d-flex align-items-center">
+//                                         <img src="${m[Object.keys(m)[21]]}" class="img-fluid" alt="flags of africa">
+//                                     </div>
+//                                     <div class="col-9">
+//                                         <button id="close" onclick="closeBtnEurope()"><i class="fas fa-window-close"></i></button>
+//                                         <h5 class="country-title">${m[Object.keys(m)[0]]}</h5>
+//                                         <p class="card-text">
+//                                             <ul class="basic-info">
+//                                                 <li class="general-info">Capital City: ${m[Object.keys(m)[5]]}</li>
+//                                                 <li class="general-info">Sub-Continent: ${m[Object.keys(m)[8]]}</li>
+//                                                 <li class="general-info">Population: ${m[Object.keys(m)[9]]}</li>
+//                                             </ul>
+//                                         </p>
+//                                     </div>
+//                                 </div>
+                                
+//                         </div>              
+//                     `
+//                 }))
+//             .catch((e));
+//         })
+// })
 
 $(document).ready(function(){
         $('#america-btn').on("click",function(event){
@@ -194,24 +226,22 @@ $(document).ready(function(){
   .catch((e));
         })
 })
-
-
 //functions to close the div containing the conitinent country data upon clicking the close button on the top right corner of the elements
-function closeBtnSearch(){
+function closeBtnSearch() {
     document.getElementById('country-search').innerHTML = ""
 }
-function closeBtnAfrica(){
-     document.getElementById('africa').innerHTML = "";
+function closeBtnAfrica() {
+    document.getElementById('africa').innerHTML = "";
 }
-function closeBtnAsia(){
-     document.getElementById('asia').innerHTML = "";
+function closeBtnAsia() {
+    document.getElementById('asia').innerHTML = "";
 }
-function closeBtnEurope(){
-     document.getElementById('europe').innerHTML = "";
+function closeBtnEurope() {
+    document.getElementById('europe').innerHTML = "";
 }
-function closeBtnAmerica(){
-     document.getElementById('america').innerHTML = "";
+function closeBtnAmerica() {
+    document.getElementById('america').innerHTML = "";
 }
-function closeBtnOceania(){
-     document.getElementById('oceania').innerHTML = "";
+function closeBtnOceania() {
+    document.getElementById('oceania').innerHTML = "";
 }

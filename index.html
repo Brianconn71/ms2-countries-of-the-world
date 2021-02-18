@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Get some more information on the countries of the world and take the quiz to prove yourself!"/>
+    <meta name="Description" content="Get some more information on the countries of the world and take the quiz to prove yourself!" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.2/sandstone/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io_globe/apple-touch-icon.png">
@@ -18,11 +19,12 @@
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
     <script>
-        (function(){
+        (function() {
             emailjs.init("user_EiLAIeYYMhRgVEmtnMA7P");
         })();
     </script>
 </head>
+
 <body>
     <!-- Nav bar- used the bootstrap nav-bar element -->
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
@@ -44,28 +46,28 @@
         <div id="carouselInterval" class="page-hdr carousel slide" data-ride="carousel">
             <div class="carousel-inner page-hdr">
                 <div class="carousel-item header-carousel-image active" data-interval="7000">
-                <img src="assets/images/earth-from-space.jpg" class="d-block w-100 h-100" alt="an image of earth taken from space">
+                    <img src="assets/images/earth-from-space.jpg" class="d-block w-100 h-100" alt="an image of earth taken from space">
                 </div>
                 <div class="carousel-item header-carousel-image" data-interval="7000">
-                <img src="assets/images/aerial-image-of-america.jpg" class="header-carousel-image d-block w-100" alt="an aerial image taken of america">
+                    <img src="assets/images/aerial-image-of-america.jpg" class="header-carousel-image d-block w-100" alt="an aerial image taken of america">
                 </div>
                 <div class="carousel-item header-carousel-image" data-interval="7000">
-                <img src="assets/images/map-of-europe.jpg" class="header-carousel-image d-block w-100" alt="an image of a map of europe">
+                    <img src="assets/images/map-of-europe.jpg" class="header-carousel-image d-block w-100" alt="an image of a map of europe">
                 </div>
                 <div class="carousel-item header-carousel-image" data-interval="7000">
-                <img src="assets/images/map-of-the-world.jpg" class="header-carousel-image d-block w-100" alt="an image of the map of the world">
+                    <img src="assets/images/map-of-the-world.jpg" class="header-carousel-image d-block w-100" alt="an image of the map of the world">
                 </div>
                 <div class="carousel-item header-carousel-image" data-interval="7000">
-                <img src="assets/images/painted-world-map.jpg" class="header-carousel-image d-block w-100" alt="an image of a painting of the world map">
+                    <img src="assets/images/painted-world-map.jpg" class="header-carousel-image d-block w-100" alt="an image of a painting of the world map">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselInterval" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#carouselInterval" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
             </a>
         </div>
         <div class="btn-display">
@@ -89,18 +91,18 @@
             <div class="row">
                 <div class="button-container align-items-center justify-content-around d-flex">
                     <button class="continent-btn" id="africa-btn">Africa</button>
-                    <button class="continent-btn" id="america-btn">Americas</button>	
-                    <button class="continent-btn" id="asia-btn">Asia</button>
-                    <button class="continent-btn" id="europe-btn">Europe</button>
+                    <button class="continent-btn" id="america-btn">Americas</button>
+                    <button class="continent-btn" id="asia-btn" onclick="returnAsia()">Asia</button>
+                    <button class="continent-btn" id="europe-btn" onclick="returnEurope()">Europe</button>
                     <button class="continent-btn" id="oceania-btn">Oceania</button>
                 </div>
-                    <div class="button-info-containers">
-                        <div id="africa"></div>
-                        <div id="america"></div>
-                        <div id="asia"></div>
-                        <div id="europe"></div>
-                        <div id="oceania"></div>
-                    </div>
+                <div class="button-info-containers">
+                    <div id="africa"></div>
+                    <div id="america"></div>
+                    <div id="asia"></div>
+                    <div id="europe"></div>
+                    <div id="oceania"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -145,21 +147,21 @@
                 <button class="btn playAgain" onclick="playAgain()">Play Again</button>
             </div>
         </div>
- 
+
     </section>
 
     <!-- Contact us section -->
     <section class="contact-us" id="contact-us">
-        <div class="container" >
+        <div class="container">
             <div class="row">
                 <div class="col contact-title">
                     <h2 class="contact-section-title">Send us a message</h2>
                 </div>
             </div>
-            <form onsubmit="return sendMail(this)" class="contact-form">                    
+            <form onsubmit="return sendMail(this)" class="contact-form">
                 <div class="form-floating form-groups rtr">
-                     <label for="first-name" class="labels">First Name:</label>
-                     <input type="text" id="first-name" name="first-name" class="form-control inputs" placeholder="Enter your first name" required>
+                    <label for="first-name" class="labels">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" class="form-control inputs" placeholder="Enter your first name" required>
                 </div>
                 <div class="form-floating form-groups rtr">
                     <label for="last-name" class="labels">Last Name:</label>
@@ -224,4 +226,5 @@
     <script src="assets/js/countryData.js"></script>
     <script src="assets/js/quiz.js"></script>
 </body>
+
 </html>
