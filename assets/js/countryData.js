@@ -33,7 +33,7 @@ $(document).ready(function() {
 })
 
 
-// The below jquery functions are used to get information on the countries depending on which continent button that the user clicks
+// The below functions are used to get information on the countries depending on which continent button that the user clicks
 
 // Had to make a change to my buttons as asynchronous calls wren't working so I switched to the fetch method https://jakearchibald.com/2015/thats-so-fetch/
 
@@ -41,15 +41,13 @@ $(document).ready(function() {
 
 // also figured out how to place my close button in the right corner here: https://stackoverflow.com/questions/6632340/place-a-button-right-aligned
 
-// initially, Had planned to use one document.ready statement but the calls were only being made in order and I didn't want that so the only solution I found was using multiple document.ready calls.
 
-$(document).ready(function(){
-        $('#africa-btn').on("click",function(event){
-            // Make ajax request
-             fetch('https://restcountries.eu/rest/v2/region/africa')
-            .then((r) => r.json())
-            .then((data) =>  data.forEach(function(m){
-                    document.getElementById('africa').innerHTML += `
+function returnAfrica() {
+    // Make ajax request
+    fetch('https://restcountries.eu/rest/v2/region/africa')
+        .then((r) => r.json())
+        .then((data) => data.forEach(function(m) {
+            document.getElementById('africa').innerHTML += `
                         <div class="container" id="row-country">
                                 <div class="row">
                                     <div class="col-3 d-flex align-items-center">
@@ -70,15 +68,15 @@ $(document).ready(function(){
                                 
                         </div>              
                     `
-                }))
-        });
-})
-function returnAsia(){
+        }))
+}
+
+function returnAsia() {
     // Make ajax request
-             fetch('https://restcountries.eu/rest/v2/region/asia')
-            .then((r) => r.json())
-            .then((data) =>  data.forEach(function(m){
-                    document.getElementById('asia').innerHTML += `
+    fetch('https://restcountries.eu/rest/v2/region/asia')
+        .then((r) => r.json())
+        .then((data) => data.forEach(function(m) {
+            document.getElementById('asia').innerHTML += `
                         <div class="container" id="row-country">
                                 <div class="row">
                                     <div class="col-3 d-flex align-items-center">
@@ -99,16 +97,16 @@ function returnAsia(){
                                 
                         </div>              
                     `
-                }))
-            .catch((e));
-        // })
+        }))
+        .catch((e));
+    // })
 };
 
-function returnEurope(){
+function returnEurope() {
     fetch('https://restcountries.eu/rest/v2/region/europe')
-            .then((r) => r.json())
-            .then((data) =>  data.forEach(function(m){
-                    document.getElementById('europe').innerHTML += `
+        .then((r) => r.json())
+        .then((data) => data.forEach(function(m) {
+            document.getElementById('europe').innerHTML += `
                         <div class="container" id="row-country">
                                 <div class="row">
                                     <div class="col-3 d-flex align-items-center">
@@ -129,49 +127,16 @@ function returnEurope(){
                                 
                         </div>              
                     `
-                }))
-            .catch((e));
+        }))
+        .catch((e));
 }
 
-// $(document).ready(function(){
-//         $('#europe-btn').on("click",function(event){
-//             // Make ajax request
-//            fetch('https://restcountries.eu/rest/v2/region/europe')
-//             .then((r) => r.json())
-//             .then((data) =>  data.forEach(function(m){
-//                     document.getElementById('europe').innerHTML += `
-//                         <div class="container" id="row-country">
-//                                 <div class="row">
-//                                     <div class="col-3 d-flex align-items-center">
-//                                         <img src="${m[Object.keys(m)[21]]}" class="img-fluid" alt="flags of africa">
-//                                     </div>
-//                                     <div class="col-9">
-//                                         <button id="close" onclick="closeBtnEurope()"><i class="fas fa-window-close"></i></button>
-//                                         <h5 class="country-title">${m[Object.keys(m)[0]]}</h5>
-//                                         <p class="card-text">
-//                                             <ul class="basic-info">
-//                                                 <li class="general-info">Capital City: ${m[Object.keys(m)[5]]}</li>
-//                                                 <li class="general-info">Sub-Continent: ${m[Object.keys(m)[8]]}</li>
-//                                                 <li class="general-info">Population: ${m[Object.keys(m)[9]]}</li>
-//                                             </ul>
-//                                         </p>
-//                                     </div>
-//                                 </div>
-                                
-//                         </div>              
-//                     `
-//                 }))
-//             .catch((e));
-//         })
-// })
-
-$(document).ready(function(){
-        $('#america-btn').on("click",function(event){
-            // Make ajax request
-             fetch('https://restcountries.eu/rest/v2/region/americas')
-            .then((r) => r.json())
-            .then((data) =>  data.forEach(function(m){
-                    document.getElementById('america').innerHTML += `
+function returnAmericas() {
+    // Make ajax request
+    fetch('https://restcountries.eu/rest/v2/region/americas')
+        .then((r) => r.json())
+        .then((data) => data.forEach(function(m) {
+            document.getElementById('america').innerHTML += `
                         <div class="container" id="row-country">
                                 <div class="row">
                                     <div class="col-3 d-flex align-items-center">
@@ -192,16 +157,15 @@ $(document).ready(function(){
                                 
                         </div>              
                     `
-                }))
-            .catch((e));
-        })
-})
-$(document).ready(function(){
-        $('#oceania-btn').on("click",function(event){
-            fetch('https://restcountries.eu/rest/v2/region/oceania')
-            .then((r) => r.json())
-            .then((data) =>  data.forEach(function(m){
-                    document.getElementById('oceania').innerHTML += `
+        }))
+        .catch((e));
+}
+
+function returnOceania() {
+    fetch('https://restcountries.eu/rest/v2/region/oceania')
+        .then((r) => r.json())
+        .then((data) => data.forEach(function(m) {
+            document.getElementById('oceania').innerHTML += `
                         <div class="container" id="row-country">
                             <div class="row">
                                 <div class="col-3 d-flex align-items-center">
@@ -222,26 +186,31 @@ $(document).ready(function(){
                         
                         </div>              
                         `
-                }))
-  .catch((e));
-        })
-})
+        }))
+        .catch((e));
+
+}
 //functions to close the div containing the conitinent country data upon clicking the close button on the top right corner of the elements
 function closeBtnSearch() {
     document.getElementById('country-search').innerHTML = ""
 }
+
 function closeBtnAfrica() {
     document.getElementById('africa').innerHTML = "";
 }
+
 function closeBtnAsia() {
     document.getElementById('asia').innerHTML = "";
 }
+
 function closeBtnEurope() {
     document.getElementById('europe').innerHTML = "";
 }
+
 function closeBtnAmerica() {
     document.getElementById('america').innerHTML = "";
 }
+
 function closeBtnOceania() {
     document.getElementById('oceania').innerHTML = "";
 }
