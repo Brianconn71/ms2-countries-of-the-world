@@ -66,9 +66,24 @@ They can study for the quiz by using the links and the search bar to find out in
 
 ### Features
 
+The website has one main page. This page will contain all the elements of my project except for the 404 page which is separate.
+
+The header will have a bootstrap carousel with 5 images. A different image becomes active every 8 seconds. The header will also contain 2 main CTAs, Take our Quiz and Discover the world, these will be the first things a user sees on the page. The take our quiz button will be slightly brighter in color to the discover the world button as taing the quiz is the reason a user will come to the page and I want to make it slightly more prominent.
+
+The next section on the page will be a search bar and button functionality to allow a user to find out more information about the various countries of the world. This will allow a user to "study" before taking the quiz or if they just want to learn some new information about a country then it will be a one stop shop for them. In the making of the site, I also envisioned young kids in primary scool who are just learning countries and capitals to use the site to expand their curiosity.
+
+The quiz game section is the next section on the page and will encompass calling an api to dislay questions and 4 multiple choice answers, display a score to users and display their progress throughout the quiz with a progress bar and show them what question they are on out of 10. The quiz will display a start the quiz button which a user will click on in order to display the first question and start the quiz. At the end of the quiz a results container will show tell them congrats on finishing the quiz. It will also show them there final score and ask them if they would like to play the quiz again. A play again button will also appear on the results section which a user will click on in order to play the quiz again if they wish too.
+
+The final section is the send a message section which will allow a user to send on their high score, make a general query or comment about the website or allow them to send on any error they have seen on the site or quiz. When they submit there message email.js will send an email to me and a new section will appear in place of the form which will thank the user for their message and assure them that we will get back to them ASAP.
+
+The website will also have a fixed navigation bar at the top of the page with the logo for the site.
+
+There will also be a footer fixed to the bottom of the page displaying social media icons and a trademark icon followed by my name.
 
 
 ### Future Features
+
+Due to reasons outside of my control I was unable to add "Easy", "Medium" and "Hard" modes to the quiz in the time frame that was alloted for this project. However, It is something that a future release of the quiz will have, Each quiz will have 10 questions and depending on how they do on a level, the chance to move up and take on a more challenging quiz will be offered to them. I think this would really appeal to people who want to expand there knowledge base and in particular to kids who are just learning about the world and want to continue to push there boundaries. 
 
 ## Structure
 
