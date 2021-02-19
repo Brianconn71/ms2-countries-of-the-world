@@ -71,13 +71,13 @@ function nextQuestion() {
         finishedGame.classList.remove('hide')
     }
     questionCounter++
-    progressText.innerText = `Question ${questionCounter}/${max_questions}`;
+    progressText.innerHTML = `Question ${questionCounter}/${max_questions}`;
     // udate the progress bar
     fullBar.style.width = `${(questionCounter / max_questions)* 100}%`
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionIndex]
-    question.innerText = currentQuestion.question;
+    question.innerHTML = currentQuestion.question;
 
     answers.forEach(choice => {
         const number = choice.dataset['number'];
