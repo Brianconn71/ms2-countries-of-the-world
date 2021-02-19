@@ -116,7 +116,7 @@ answers.forEach(choice => {
 
 function incrementScore(num) {
     score += num;
-    scoreText.innerText = score;
+    scoreText.innerHTML = score;
     // adding the last score saved in the local storage to the final score displayed on the end screen of the quiz
     finalScore.innerText = score;
 }

@@ -313,9 +313,9 @@ button.menu-toggler:focus{
     max-width: 80%;
     background-color: #cc978e;
     border-radius: 30px;
-    padding: 1rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    padding: 5rem 1rem 5rem 1rem;
     -webkit-box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
             box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.2);
 }
@@ -382,9 +382,11 @@ button.menu-toggler:focus{
 
 .correct{
     background-color: #008000;
+    color: #fcecc9;
 }
 .incorrect{
     background-color: #c21807;
+    color: #fcecc9;
 }
 /* scroe and question display on quiz */
 #score-display{
