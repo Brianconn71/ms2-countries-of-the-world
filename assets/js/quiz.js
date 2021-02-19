@@ -81,7 +81,7 @@ function nextQuestion() {
 
     answers.forEach(choice => {
         const number = choice.dataset['number'];
-        choice.innerText = currentQuestion['choice' + number];
+        choice.innerHTML = currentQuestion['choice' + number];
     });
 
     availableQuestions.splice(questionIndex, 1);
@@ -119,7 +119,6 @@ function incrementScore(num) {
     scoreText.innerText = score;
     // adding the last score saved in the local storage to the final score displayed on the end screen of the quiz
     finalScore.innerText = score;
-    finalScore.style.fontWeight = "bold"
 }
 
 // my own custom function to start the game again once a user completes the quiz 

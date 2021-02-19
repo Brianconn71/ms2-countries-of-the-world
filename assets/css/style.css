@@ -450,6 +450,13 @@ button.menu-toggler:focus{
     font-weight: 300;
     padding: 1rem;
 }
+#finalScore{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
 .playAgainText{
     margin-bottom: 2rem;
     text-transform: capitalize;
