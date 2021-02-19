@@ -104,7 +104,7 @@ button.menu-toggler:focus{
         flex-wrap: wrap;
     padding: 1rem;
     width: 100%;
-    top: 70%;
+    top: 60%;
 }
 /* resolved issues relating to button placement here https://stackoverflow.com/questions/7560832/how-to-center-a-button-within-a-div */
 .btn-cta{
@@ -766,6 +766,11 @@ select.select-inputs:focus{
     }
 }
 
+@media only screen and (min-width: 400px){
+    .btn-display{
+        top: 70%
+    }
+}
 
 @media only screen and (min-width: 600px){
     .search-text{
@@ -809,6 +814,7 @@ select.select-inputs:focus{
     }
 }
 
+
 @media only screen and (min-width: 1000px){
     .error-text{
         font-size: 1.2rem;
@@ -830,5 +836,8 @@ select.select-inputs:focus{
     }
     .playAgain{
         width: 30%;
+    }
+    .btn-display{
+        top: 80%
     }
 }
