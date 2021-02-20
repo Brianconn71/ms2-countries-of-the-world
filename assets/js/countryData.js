@@ -26,11 +26,10 @@ $(document).ready(function() {
                     </p>
                 </div>
             </div>
-            `)
+            `);
         });
-    })
-
-})
+    });
+});
 
 
 // The below functions are used to get information on the countries depending on which continent button that the user clicks
@@ -67,8 +66,8 @@ function returnAfrica() {
                                 </div>
                                 
                         </div>              
-                    `
-        }))
+                    `;
+        }));
 }
 
 function returnAsia() {
@@ -96,11 +95,9 @@ function returnAsia() {
                                 </div>
                                 
                         </div>              
-                    `
-        }))
-        .catch((e));
-    // })
-};
+                    `;
+        }));
+}
 
 function returnEurope() {
     fetch('https://restcountries.eu/rest/v2/region/europe')
@@ -126,9 +123,8 @@ function returnEurope() {
                                 </div>
                                 
                         </div>              
-                    `
-        }))
-        .catch((e));
+                    `;
+        }));
 }
 
 function returnAmericas() {
@@ -156,9 +152,8 @@ function returnAmericas() {
                                 </div>
                                 
                         </div>              
-                    `
-        }))
-        .catch((e));
+                    `;
+        }));
 }
 
 function returnOceania() {
@@ -185,14 +180,13 @@ function returnOceania() {
                             </div>
                         
                         </div>              
-                        `
-        }))
-        .catch((e));
+                        `;
+        }));
 
 }
 //functions to close the div containing the conitinent country data upon clicking the close button on the top right corner of the elements
 function closeBtnSearch() {
-    document.getElementById('country-search').innerHTML = ""
+    document.getElementById('country-search').innerHTML = "";
 }
 
 function closeBtnAfrica() {

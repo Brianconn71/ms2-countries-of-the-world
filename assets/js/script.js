@@ -2,14 +2,14 @@
 // Found advice and guidance on how to best make a return to top page here: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 const scrollButton = document.getElementById('pageTop');
 
-window.onscroll = function() {scrollToTop()};
+window.onscroll = function() {scrollToTop();};
 
 // user scrolls 50px down page then button will appear
 function scrollToTop(){
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
         scrollButton.style.display = 'block';
     } else {
-        scrollButton.style.display = 'none'
+        scrollButton.style.display = 'none';
     }
 }
 
@@ -42,8 +42,8 @@ $(document).ready(function(){
     });
     $("form").submit(function(){
         $(".submit-form").removeClass("hide");
-    })
-})
+    });
+});
 
 //This function will send a filled out contact form to mail.js
 function sendMail(contactForm){
@@ -58,13 +58,12 @@ function sendMail(contactForm){
         },
         function(error){
         }
-    )
+    );
     return false;
 }
 
 // This function will return the user to the homepage if a button is clicked when a 404 error occurs
 
 function returnHome() {
-    window.location.href = "index.html"
+    window.location.href = "index.html";
 }
-
