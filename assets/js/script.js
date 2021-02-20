@@ -1,3 +1,4 @@
+//jshint esversion: 6
 // function for scrolling back to the top of the page if the user clicks on the return to top button
 // Found advice and guidance on how to best make a return to top page here: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 const scrollButton = document.getElementById('pageTop');
@@ -32,8 +33,7 @@ $(document).ready(function(){
         scrollTop: $("#quiz-game").offset().top},
         'slow');
     });
-});    
-
+});
 
 // This jQuery function adds a thank you message in a hidden div after a user submits their form and hides the form
 $(document).ready(function(){

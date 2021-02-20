@@ -87,6 +87,8 @@ Due to reasons outside of my control I was unable to add "Easy", "Medium" and "H
 
 ## Structure
 
+The website is split into 4 different sections
+
 ## Skeleton
 
 ### Wireframes
