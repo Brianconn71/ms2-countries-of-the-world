@@ -1,4 +1,4 @@
-//jshint esversion: 6
+// jshint esversion: 6
 // This page is soley used to retreive country data from the search bar on the index page and to retrieve  in the index.html page
 //Spent way too long stuck here on an issue with jQuery, a very simple fix to was found here https://stackoverflow.com/questions/18271251/typeerror-ajax-is-not-a-function
 

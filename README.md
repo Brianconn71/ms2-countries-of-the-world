@@ -87,11 +87,21 @@ Due to reasons outside of my control I was unable to add "Easy", "Medium" and "H
 
 ## Structure
 
-The website is split into 4 different sections
+The website is split into 4 different sections on one index.html file. Each section has a different role to play in the look and feel of the site to the user.
+
+It is important for the user to understand what the website is about when they land on the page. This is made apparent with the name of the site being countries of the world
 
 ## Skeleton
 
+There are a lot of changes that were made to the site between inception of the idea and the final project. Initially, I had called it flags of the world and had a much different color theme and typography that the finished project.
+
+In the end I made changes to the color theme and name and eventually decided to call the site countries of the world as I felt it better got the point across and appealed to a wider user base than just showing the different flags of countries.
+
+The below wireframes are from the very beginning of the idea for the project and don't truly reflect the direction I ended up going eith o the site.
+
 ### Wireframes
+
+![Website Wireframe]()
 
 ## Surface
 
