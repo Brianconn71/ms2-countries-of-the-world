@@ -3,18 +3,16 @@
 // Constants
 const question = document.getElementById('question');
 const startBtn = document.getElementById('start-btn');
-const answerBtns = document.getElementById('answer-btns')
+const answerBtns = document.getElementById('answer-btns');
 const questionContainer = document.getElementById('question-container');
 const answers = Array.from(document.getElementsByClassName('answer-btn'));
 const progressText = document.getElementById('progressText');
-const scoreText = document.getElementById('score')
-const fullBar = document.getElementById('full-bar')
-const finishedGame = document.getElementById('finishedGame')
+const scoreText = document.getElementById('score');
+const fullBar = document.getElementById('full-bar');
+const finishedGame = document.getElementById('finishedGame');
 const max_questions = 10;
 const correct_bonus = 10;
-const finalScore = document.getElementById('finalScore')
-const newScore = localStorage.getItem('newScore')
-
+const finalScore = document.getElementById('finalScore');
 // lets
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -25,7 +23,7 @@ let availableQuestions = [];
 let questions = [];
 
 // questions.addEventListener('click', nextQuestion),
-startBtn.addEventListener('click', startQuiz)
+startBtn.addEventListener('click', startQuiz);
 
 
 // the below fetch, gets the questions and answers for the quiz form the open trivia database https://opentdb.com/
@@ -46,7 +44,7 @@ fetch('https://opentdb.com/api.php?amount=10&category=22&difficulty=easy&type=mu
             answerChoices.splice(formattedQuestion.answer - 1, 0, loadedQuestion.correct_answer);
 
             answerChoices.forEach((choice, index) => {
-                formattedQuestion['choice' + (index + 1)] = choice
+                formattedQuestion['choice' + (index + 1)] = choice;
             });
             return formattedQuestion;
         });
@@ -57,26 +55,26 @@ fetch('https://opentdb.com/api.php?amount=10&category=22&difficulty=easy&type=mu
 function startQuiz() {
     questionCounter = 0;
     score = 0;
-    availableQuestions = [...questions]
-    startBtn.classList.add('hide')
-    questionContainer.classList.remove('hide')
-    nextQuestion()
+    availableQuestions = [...questions];
+    startBtn.classList.add('hide');
+    questionContainer.classList.remove('hide');
+    nextQuestion();
 }
 
 function nextQuestion() {
 
     if (availableQuestions.length === 0 || questionCounter >= max_questions) {
         // Shows a new container after a user finishes the quiz
-        questionContainer.classList.add('hide')
-        finishedGame.classList.remove('hide')
+        questionContainer.classList.add('hide');
+        finishedGame.classList.remove('hide');
     }
-    questionCounter++
+    questionCounter++;
     progressText.innerHTML = `Question ${questionCounter}/${max_questions}`;
     // udate the progress bar
-    fullBar.style.width = `${(questionCounter / max_questions)* 100}%`
+    fullBar.style.width = `${(questionCounter / max_questions)* 100}%`;
 
-    const questionIndex = Math.floor(Math.random() * availableQuestions.length)
-    currentQuestion = availableQuestions[questionIndex]
+    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = availableQuestions[questionIndex];
     question.innerHTML = currentQuestion.question;
 
     answers.forEach(choice => {
@@ -87,7 +85,7 @@ function nextQuestion() {
     availableQuestions.splice(questionIndex, 1);
 
     acceptingAnswers = true;
-};
+}
 
 answers.forEach(choice => {
     choice.addEventListener('click', e => {
@@ -95,24 +93,24 @@ answers.forEach(choice => {
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset['number']
+        const selectedAnswer = selectedChoice.dataset['number'];
 
-        let feedbackClass = 'incorrect'
+        let feedbackClass = 'incorrect';
         if (selectedAnswer == currentQuestion.answer) {
-            feedbackClass = 'correct'
+            feedbackClass = 'correct';
         }
         if (feedbackClass == "correct") {
-            incrementScore(correct_bonus)
+            incrementScore(correct_bonus);
         }
-        selectedChoice.classList.add(feedbackClass)
+        selectedChoice.classList.add(feedbackClass);
 
         setTimeout(() => {
-            selectedChoice.classList.remove(feedbackClass)
-            nextQuestion()
-        }, 1000)
-    })
+            selectedChoice.classList.remove(feedbackClass);
+            nextQuestion();
+        }, 1000);
+    });
 
-})
+});
 
 function incrementScore(num) {
     score += num;
@@ -121,9 +119,9 @@ function incrementScore(num) {
     finalScore.innerText = score;
 }
 
-// my own custom function to start the game again once a user completes the quiz 
+// function to start the game again once a user completes the quiz 
 function playAgain() {
-    questionContainer.classList.remove('hide')
-    finishedGame.classList.add('hide')
-    startQuiz()
+    questionContainer.classList.remove('hide');
+    finishedGame.classList.add('hide');
+    startQuiz();
 }
