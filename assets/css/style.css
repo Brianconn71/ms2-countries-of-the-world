@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Raleway:wght@100;200;300;400;500;600&display=swap');
 
-/* Wanted to make the scrolling on the site smoother so found an answer here https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2 */
 *{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
+/* Wanted to make the scrolling on the site smoother so found an answer here https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2 */
 html{
     scroll-behavior: smooth;
 }

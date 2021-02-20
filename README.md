@@ -93,23 +93,56 @@ It is important for the user to understand what the website is about when they l
 
 ## Skeleton
 
+### Wireframes
+
+![Website Wireframe](https://github.com/Brianconn71/ms2-countries-of-the-world/blob/master/assets/wireframes/Flags%20of%20the%20world.pdf)
+
+## Surface
+
 There are a lot of changes that were made to the site between inception of the idea and the final project. Initially, I had called it flags of the world and had a much different color theme and typography that the finished project.
 
 In the end I made changes to the color theme and name and eventually decided to call the site countries of the world as I felt it better got the point across and appealed to a wider user base than just showing the different flags of countries.
 
-The below wireframes are from the very beginning of the idea for the project and don't truly reflect the direction I ended up going eith o the site.
+I also added a custom made 404 page with a basic paragraph of text that informs a user that a page does not exist and informs them to click on a button to return back to the homepage of the site.
 
-### Wireframes
+I wanted to have a bright colored and easy to read site. Keeping consistency thoughout the project and maintaining consistent coloring on the buttons was important too.
 
-![Website Wireframe]()
-
-## Surface
 
 ### Color
 
-### images
+The main colors for the project were found using [coolors.co](https://coolors.co/c0bda5-cc978e-ed691d-261447-ff3864-262730). I spent time fiddling around with different color schemes but this was the most pleasing on the eye.
+
+* #cdcdcd - this is the background color of the page, it is a very light grey and every color seemed to go very well with it.
+
+* #261447 - this is thw color of the header and the footer. It is a dark purple color which makes the style of the fonts stand out.
+
+* #fcecc9 - this is the font color in most places. It is a bright white/yellow color that is easier to see and read than a full on white color.
+
+* #262730 - this is a dark black color. It is used for cont color in the search bar and in the quiz as it looks better and easier to read with a brighter colored background.
+
+* #FF3864 - This is a striking red color. This color was used as the background on the country cards that come up when the user searches for a country or clicks on the continent buttons.
+
+* #ED691D - This is a bright orange color. It is usd for the take our quiz cta on the header as well as the other buttons on the site. It was chosen as it stands out on the page and makes you notice the buttons. I wanted to have consistency on my site.
+
+* rgb(196, 100, 45) -  This is a slightly darker less strinking orange. It was used only on the discover the world cta as I wanted it to be less appealing than the take the quiz cta.
+
+* #C0BDA5 - This is the grey color that is used on the background og the contact form. I wanted to use light coloring on the page and this grey was light in color but also stood out just enough from the background color set for the entire site.
+
+* #CC978E - This is the light red/brown color used for the quiz game. I wanted to have a neutral color for the quiz game that was light in color but stood out from the main background color of the site and I believe that this was achieved.
+
+* #008000 - This is the dark green color that comes up on the quiz game answer if the user selects the right answer.
+
+* #C21807 - This is the dark red color that somes up on the quiz game answer if the user selects the wrong answer.
+
+### Images
+
+The only images used in the making of the website were used in the header in conjunction with the bootstrap carousel. These images were taken from [Unsplash](www.unsplash.com).
 
 ### Fonts
+
+Two fonts were used in the making of the site. The main-heading, logo font used on the site was [Poppins](https://fonts.google.com/specimen/Poppins?query=poppins&preview.text_type=custom) and the paragraph, sub-heading text used was [Raleway](https://fonts.google.com/specimen/Raleway?query=Raleway&preview.text_type=custom). The default font is sans-serif.
+
+These fonts complement each other very well and have easy readibility which is key for vicitors to my site.
 
 # Technologies Used
 
