@@ -1,5 +1,9 @@
 # Countries of the world
 
+![Responsive view of the website]()
+
+[View the site in GitHub Pages](https://brianconn71.github.io/ms2-countries-of-the-world/)
+
 ## Purpose
 
 This web app was built for the purpose of my second milestone project at Code Institute.
