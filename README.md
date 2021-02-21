@@ -100,7 +100,7 @@ It is important for the user to understand what the website is about when they l
 
 [Website Wireframe PDF](https://github.com/Brianconn71/ms2-countries-of-the-world/blob/master/assets/wireframes/Flags%20of%20the%20world.pdf)
 
-[Website Wireframe]()
+![Website Wireframe](https://github.com/Brianconn71/ms2-countries-of-the-world/blob/master/assets/wireframes/Flags%20of%20the%20world.png)
 
 ## Surface
 
@@ -268,7 +268,21 @@ Further reading and troubleshooting on cloning a repository from GitHub can be f
 
 # Credits
 
-* carousel images on header
+## Content
+
+* The ideaa for my project came from an old globe game i remeembered having as a child. I wanted tto make a basic site that would appeal to people of all ages to help them to learn more about the countries of the world and then to test there knowledge in the quiz.
+
+* [Bootstrap](https://getbootstrap.com/) was used throughout the project. The header carousel comes from the bootstrap carousel. Bootstrap cards are used to display the country information.
+
+* [W3 Schools](https://www.w3schools.com/) was used as a source of troubleshooting.
+
+* There was a lot of struggle involved with the quiz game. I spent a lot of time trying to get the questions and answers to appear on the dom from the api. The following two youtube videos were my main source of inspiration and guidance throughout the process. [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=WebDevSimplified) was a very good source for helping me with styling, event listeners etc. 
+while [james-quick-youtube-series](https://www.youtube.com/watch?v=zZdQGs62cR8&list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF&index=3&ab_channel=JamesQQuick) has a playlist on creating a quiz app with Javascript which was my main source of guidance throughout the coding of the quiz game on my site.
+
+
+## Media
+
+* Carousel images on header
     * [An image of the earth from space](https://unsplash.com/photos/Q1p7bh3SHj8) taken by [Nasa](https://unsplash.com/@nasa)
 
     * [An image of the map of the world](https://pixabay.com/illustrations/map-of-the-world-background-paper-2401458/) taken by [Yuri_B](https://pixabay.com/users/yuri_b-2216431/)
@@ -279,15 +293,42 @@ Further reading and troubleshooting on cloning a repository from GitHub can be f
 
     * [An image of Europe](https://unsplash.com/photos/inNzGtPrkHk) taken by [USGS](https://unsplash.com/@usgs)
 
-## Contents
-
-## Media
-
 ## Code Snippets
+
+* I wanted to create a return to the top of the page button so that when a user is reading information about a country that they can press the button to return back to the top, took code example from w3 schools [here](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
+
+* I had some trouble figuring out how to link to different sections of the page when clicking on the cta so I found a solution [here](https://stackoverflow.com/questions/2238368/how-to-make-a-button-redirect-to-another-page-using-jquery-or-just-javascript) 
+
+* I didn't like the way the buttons were jumping to the different sections so I found a solution to the scrolling problem [here](https://stackoverflow.com/questions/18071046/smooth-scroll-to-specific-div-on-click)
+
+* [james-quick-youtube-series](https://www.youtube.com/watch?v=zZdQGs62cR8&list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF&index=3&ab_channel=JamesQQuick) & 
+[web-dev-simplified](https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=WebDevSimplified) were great sources of inspiration, guidance, and help as I completed the quiz section of the site.
+
+* Had an issue with jQuery initially, a solution was found [here](https://stackoverflow.com/questions/18271251/typeerror-ajax-is-not-a-function)
+
+* Again, had some issues with the search bar using jQuery, various solutions were found [here](https://stackoverflow.com/questions/34280868/search-bar-with-jquery), [here](https://javascript.info/fetch), and [here](https://stackoverflow.com/questions/43797556/jquery-with-button-onclick-functionquestions/43797556/jquery-with-button-onclick-function)
+
+* Some help and guidance on the search bar was found here [Brad Traversy](https://www.youtube.com/watch?v=lIKrfLWNsUI&t=1147s&ab_channel=TraversyMedia)
+
+* Got help and guidance on using the fetch method from [here](https://jakearchibald.com/2015/thats-so-fetch/)
+
+* I had an issue with accessing dtat returned from the api, I found the solution [here](https://stackoverflow.com/questions/16576457/accessing-a-javascripts-object-property-without-knowing-that-property-name)
+
+* got some guidance in placing my close button in the top right corner [here](https://stackoverflow.com/questions/6632340/place-a-button-right-aligned)
+
+* I found out how to add a smooth-scroll option to my site [here](https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2)
+
+* Got some help on adding a fade-in animation [here](https://blog.hubspot.com/website/css-fade-in)
+
+* resolved some issues with button placement [here](https://stackoverflow.com/questions/7560832/how-to-center-a-button-within-a-div)
+
+* help on centering my submit button [here](https://stackoverflow.com/questions/4221263/center-form-submit-buttons-html-css)
+
+* got advice and and guidance on creating a 404 page [here](https://youtu.be/kPtS4vO42II)
 
 # Acknowledgements
 
-I would like to give a huge thanks to my mentor Adebeye for his help throughout this project and throughout the course so far.
+I would like to give a huge thanks to my mentor Adegbenga Adeye for his help throughout this project and throughout the course so far.
 
 I would also like to say a huge thanks to the slack community, I wouldn't be where I am today without them.
 
