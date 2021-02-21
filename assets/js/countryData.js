@@ -59,17 +59,17 @@ function returnAfrica() {
             document.getElementById('africa').innerHTML += `
                         <div class="container" id="row-country">
                                 <div class="row">
-                                    <div class="col-3 d-flex align-items-center">
-                                        <img src="${m[Object.keys(m)[21]]}" class="img-fluid" alt="flags of africa">
+                                    <div class="col-5 d-flex align-items-center">
+                                        <img src="${m[Object.keys(m)[21]]}" class="img-fluid" alt="${m[Object.keys(m)[0]]} flag">
                                     </div>
-                                    <div class="col-9">
+                                    <div class="col-7">
                                         <button id="close" onclick="closeBtnAfrica()"><i class="fas fa-window-close"></i></button>
                                         <h5 class="country-title">${m[Object.keys(m)[0]]}</h5>
                                         <p class="card-text">
                                             <ul class="basic-info">
-                                                <li class="general-info">Capital City: ${m[Object.keys(m)[5]]}</li>
-                                                <li class="general-info">Sub-Continent: ${m[Object.keys(m)[8]]}</li>
-                                                <li class="general-info">Population: ${m[Object.keys(m)[9]]}</li>
+                                                <li class="general-info"><strong>Capital City:</strong> ${m[Object.keys(m)[5]]}</li>
+                                                <li class="general-info"><strong>Sub-Continent:</strong> ${m[Object.keys(m)[8]]}</li>
+                                                <li class="general-info"><strong>Population:</strong> ${m[Object.keys(m)[9]]}</li>
                                             </ul>
                                         </p>
                                     </div>
@@ -88,17 +88,17 @@ function returnAsia() {
             document.getElementById('asia').innerHTML += `
                         <div class="container" id="row-country">
                                 <div class="row">
-                                    <div class="col-3 d-flex align-items-center">
-                                        <img src="${m[Object.keys(m)[21]]}" class="img-fluid" alt="flags of africa">
+                                    <div class="col-5 d-flex align-items-center">
+                                        <img src="${m[Object.keys(m)[21]]}" class="img-fluid" alt="${m[Object.keys(m)[0]]} flag">
                                     </div>
-                                    <div class="col-9">
+                                    <div class="col-7">
                                         <button id="close" onclick="closeBtnAsia()"><i class="fas fa-window-close"></i></button>
                                         <h5 class="country-title">${m[Object.keys(m)[0]]}</h5>
                                         <p class="card-text">
                                             <ul class="basic-info">
-                                                <li class="general-info">Capital City: ${m[Object.keys(m)[5]]}</li>
-                                                <li class="general-info">Sub-Continent: ${m[Object.keys(m)[8]]}</li>
-                                                <li class="general-info">Population: ${m[Object.keys(m)[9]]}</li>
+                                                <li class="general-info"><strong>Capital City:</strong> ${m[Object.keys(m)[5]]}</li>
+                                                <li class="general-info"><strong>Sub-Continent:</strong> ${m[Object.keys(m)[8]]}</li>
+                                                <li class="general-info"><strong>Population:</strong> ${m[Object.keys(m)[9]]}</li>
                                             </ul>
                                         </p>
                                     </div>
@@ -116,17 +116,17 @@ function returnEurope() {
             document.getElementById('europe').innerHTML += `
                         <div class="container" id="row-country">
                                 <div class="row">
-                                    <div class="col-3 d-flex align-items-center">
-                                        <img src="${m[Object.keys(m)[21]]}" class="img-fluid" alt="flags of africa">
+                                    <div class="col-5 d-flex align-items-center">
+                                        <img src="${m[Object.keys(m)[21]]}" class="img-fluid" alt="${m[Object.keys(m)[0]]} flag">
                                     </div>
-                                    <div class="col-9">
+                                    <div class="col-7">
                                         <button id="close" onclick="closeBtnEurope()"><i class="fas fa-window-close"></i></button>
                                         <h5 class="country-title">${m[Object.keys(m)[0]]}</h5>
                                         <p class="card-text">
                                             <ul class="basic-info">
-                                                <li class="general-info">Capital City: ${m[Object.keys(m)[5]]}</li>
-                                                <li class="general-info">Sub-Continent: ${m[Object.keys(m)[8]]}</li>
-                                                <li class="general-info">Population: ${m[Object.keys(m)[9]]}</li>
+                                                <li class="general-info"><strong>Capital City:</strong> ${m[Object.keys(m)[5]]}</li>
+                                                <li class="general-info"><strong>Sub-Continent:</strong> ${m[Object.keys(m)[8]]}</li>
+                                                <li class="general-info"><strong>Population:</strong> ${m[Object.keys(m)[9]]}</li>
                                             </ul>
                                         </p>
                                     </div>
@@ -145,17 +145,17 @@ function returnAmericas() {
             document.getElementById('america').innerHTML += `
                         <div class="container" id="row-country">
                                 <div class="row">
-                                    <div class="col-3 d-flex align-items-center">
-                                        <img src="${m[Object.keys(m)[21]]}" class="img-fluid" alt="flags of africa">
+                                    <div class="col-5 d-flex align-items-center">
+                                        <img src="${m[Object.keys(m)[21]]}" class="img-fluid" alt="${m[Object.keys(m)[0]]} flag">
                                     </div>
-                                    <div class="col-9">
+                                    <div class="col-7">
                                         <button id="close" onclick="closeBtnAmerica()"><i class="fas fa-window-close"></i></button>
                                         <h5 class="country-title">${m[Object.keys(m)[0]]}</h5>
                                         <p class="card-text">
                                             <ul class="basic-info">
-                                                <li class="general-info">Capital City: ${m[Object.keys(m)[5]]}</li>
-                                                <li class="general-info">Sub-Continent: ${m[Object.keys(m)[8]]}</li>
-                                                <li class="general-info">Population: ${m[Object.keys(m)[9]]}</li>
+                                                <li class="general-info"><strong>Capital City:</strong> ${m[Object.keys(m)[5]]}</li>
+                                                <li class="general-info"><strong>Sub-Continent:</strong> ${m[Object.keys(m)[8]]}</li>
+                                                <li class="general-info"><strong>Population:</strong> ${m[Object.keys(m)[9]]}</li>
                                             </ul>
                                         </p>
                                     </div>
@@ -173,17 +173,17 @@ function returnOceania() {
             document.getElementById('oceania').innerHTML += `
                         <div class="container" id="row-country">
                             <div class="row">
-                                <div class="col-3 d-flex align-items-center">
-                                    <img src="${m[Object.keys(m)[21]]}" class="img-fluid" alt="flags of africa">
+                                <div class="col-5 d-flex align-items-center">
+                                    <img src="${m[Object.keys(m)[21]]}" class="img-fluid" alt="${m[Object.keys(m)[0]]} flag">
                                 </div>
-                                <div class="col-9">
+                                <div class="col-7">
                                    <button id="close" onclick="closeBtnOceania()"><i class="fas fa-window-close"></i></button> 
                                  <h5 class="country-title">${m[Object.keys(m)[0]]}</h5>
                                     <p class="card-text">
                                         <ul class="basic-info">
-                                            <li class="general-info">Capital City: ${m[Object.keys(m)[5]]}</li>
-                                            <li class="general-info">Sub-Continent: ${m[Object.keys(m)[8]]}</li>
-                                            <li class="general-info">Population: ${m[Object.keys(m)[9]]}</li>
+                                            <li class="general-info"><strong>Capital City:</strong> ${m[Object.keys(m)[5]]}</li>
+                                            <li class="general-info"><strong>Sub-Continent:</strong> ${m[Object.keys(m)[8]]}</li>
+                                            <li class="general-info"><strong>Population:</strong> ${m[Object.keys(m)[9]]}</li>
                                         </ul>
                                     </p>
                                 </div>
