@@ -95,7 +95,9 @@ It is important for the user to understand what the website is about when they l
 
 ### Wireframes
 
-![Website Wireframe](https://github.com/Brianconn71/ms2-countries-of-the-world/blob/master/assets/wireframes/Flags%20of%20the%20world.pdf)
+[Website Wireframe PDF](https://github.com/Brianconn71/ms2-countries-of-the-world/blob/master/assets/wireframes/Flags%20of%20the%20world.pdf)
+
+[Website Wireframe]()
 
 ## Surface
 
@@ -206,7 +208,7 @@ These fonts complement each other very well and have easy readibility which is k
 * [Open Trivia Database](https://opentdb.com/api_config.php)
     * Open Trivia Database was the api used in the quiz game
 
-* [ProgrammabelWeb](https://www.programmableweb.com/)
+* [Programmable Web](https://www.programmableweb.com/)
     * ProgrammableWeb was the api used in the continent buttons section and the search bar to search for a country.
 
 # Testing
