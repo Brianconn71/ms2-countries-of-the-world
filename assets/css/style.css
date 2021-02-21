@@ -215,7 +215,7 @@ button.menu-toggler:focus{
     margin: 2rem 4rem;
 }
 .country-card{
-    width: 20rem;
+    width: auto;
     border-radius: 10px;
     background-color:#FF3864;
     border: none;
@@ -226,9 +226,11 @@ button.menu-toggler:focus{
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     color: #fcecc9;
+    text-align: center;
+    margin-top: 1rem;
 }
 .basic-info{
-    text-align: justify;
+    text-align: center;
     padding: 0;
 }
 .basic-info li{
@@ -283,12 +285,19 @@ button.menu-toggler:focus{
     -webkit-box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.3);
             box-shadow: 0 0 0.9rem 0.4rem rgba(15, 15, 15, 0.3);
 }
+.failed-search{
+    color: #262730;
+}
 #close{
+    position: absolute;
+    top: 0;
+    right: 0;
     float: right;
     background-color: #ED691D;
     color: #fcecc9;
     font-size: 0.5rem;
     border-radius: 5px;
+    padding: 0.1rem;
     outline: none;
     -webkit-box-shadow: 0 0.2rem rgba(15, 15, 15, 0.2);
             box-shadow: 0 0.2rem rgba(15, 15, 15, 0.2);
@@ -812,6 +821,9 @@ select.select-inputs:focus{
     .playAgain{
         width: 50%;
     }
+    .country-card{
+        width: 20rem;
+    }
 }
 
 
@@ -839,5 +851,11 @@ select.select-inputs:focus{
     }
     .btn-display{
         top: 80%
+    }
+    .country-title{
+        font-size: 1.5rem;
+    }
+    .basic-info li{
+        font-size: 1.2rem;
     }
 }

@@ -1,9 +1,10 @@
 // jshint esversion: 6
-// This page is soley used to retreive country data from the search bar on the index page and to retrieve  in the index.html page
 //Spent way too long stuck here on an issue with jQuery, a very simple fix to was found here https://stackoverflow.com/questions/18271251/typeerror-ajax-is-not-a-function
 
 // Some issues were fixed with jQuery here https://stackoverflow.com/questions/34280868/search-bar-with-jquery & https://javascript.info/fetch and https://stackoverflow.com/questions/43797556/jquery-with-button-onclick-functionquestions/43797556/jquery-with-button-onclick-function
 // I also got guidance and advice here https://www.youtube.com/watch?v=lIKrfLWNsUI&t=1147s&ab_channel=TraversyMedia
+
+//The below jquery function makes a call to the api depending on the input into the text field from the user, The api responds with the country that best matches the search of the full name of a country, if there is no country matching the spelling an error message will be displayed on the dom to the user.
 $(document).ready(function() {
     $('#search').on('keyup', function(event) {
         let searchValue = event.target.value;
@@ -23,9 +24,9 @@ $(document).ready(function() {
                         <h5 class="card-title country-title">${data[0].name}</h5>
                         <p class="card-text">
                             <ul class="basic-info">
-                                <li class="general-info">Capital City: ${data[0].capital}</li>
-                                <li class="general-info">Continent: ${data[0].region}</li>
-                                <li class="general-info">Population: ${data[0].population}</li>
+                                <li class="general-info"><strong>Capital City:</strong> ${data[0].capital}</li>
+                                <li class="general-info"><strong>Continent:</strong> ${data[0].region}</li>
+                                <li class="general-info"><strong>Population:</strong> ${data[0].population}</li>
                             </ul>
                         </p>
                     </div>
@@ -33,7 +34,7 @@ $(document).ready(function() {
                 `);
             }).fail(function(data){
                 $('#country-search').html(`
-                    <div>The country you are looking for does not exist, please search again and watch your spelling!</div>
+                    <div class="failed-search">The country you are looking for does not exist, please search again and watch your spelling!</div>
                 `);
             });
         };
@@ -50,7 +51,7 @@ $(document).ready(function() {
 
 // also figured out how to place my close button in the right corner here: https://stackoverflow.com/questions/6632340/place-a-button-right-aligned
 
-
+//The below functions make fetch api calls to the api and return data which is then transferred onto the dom.
 function returnAfrica() {
     // Make ajax request
     fetch('https://restcountries.eu/rest/v2/region/africa')
