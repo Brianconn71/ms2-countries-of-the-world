@@ -1,4 +1,4 @@
-//jshint esversion: 6
+// jshint esversion: 6
 // This page is used for the quiz game in the index.html page
 // Inspiration and guidance for this project was taken from https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=WebDevSimplified and https://www.youtube.com/watch?v=zZdQGs62cR8&list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF&index=3&ab_channel=JamesQQuick 
 // Constants
