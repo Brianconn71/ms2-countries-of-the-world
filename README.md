@@ -1,10 +1,10 @@
 # Countries of the world
 
-![Responsive view of the website]()
+![Responsive view of the website](https://github.com/Brianconn71/ms2-countries-of-the-world/blob/master/assets/images/responsive-image-of-site.JPG)
 
 [View the site in GitHub Pages](https://brianconn71.github.io/ms2-countries-of-the-world/)
 
-## Purpose
+## Purpose <a name="introduction"></a>
 
 This web app was built for the purpose of my second milestone project at Code Institute.
 I built this Website from scratch using a combination of HTML, CSS and JavaScript. There are also eements of jQuery and Bootstrap prevalent in the code.
@@ -19,11 +19,36 @@ When I was young I had a globe that when a country was pressed on, it would tell
 
 # Table of Contents
 
-# UX
+1. [Introduction](#introduction)
+2. [UX](#ux)
+    * [Project Description](#description)
+3. [Strategy](#strategy)
+    * [Goals](#goals)
+    * [User Stories](#user-stories)
+4. [Scope](#scope)
+    * [Features](#features)
+    * [Future Features](#future-features)
+5. [Structure](#structure)
+6. [Skeleton](#skeleton)
+    * [Wireframes](#wireframes)
+7. [Surface](#surface)
+    * [Colors](#colors)
+    * [Images](#images)
+    * [Fonts](#fonts)
+8. [Technologies Used](#technologies-used)
+9. [Deployment](#deployment)
+10. [Credits](#credits)
+    * [Content](#content)
+    * [Media](#media)
+    * [Code Snippets](#code-snippets)
+    * [Acknowledgements](#acknowledgements)
 
-## Project Description
 
-## Strategy
+# UX <a name="ux"></a>
+
+## Project Description <a name="description"></a>
+
+## Strategy <a name="strategy"></a>
 
 I created this project as a means of showcasing all that I have learnt so far in my journey towards being a full-stack developer at Code Institute. This is my second project and it showcases my knowledge of
 HTML, CSS and Javascript along with some of the libraries including jQuery and bootstrap. It also showcases knowledge of various methods and functions in the JavaScript language and the dom.
@@ -31,7 +56,7 @@ HTML, CSS and Javascript along with some of the libraries including jQuery and b
 This website should provide some fun light-hearted entertainment in the form of a quiz based on the countries of the world and other geographical data. I set up the website so as to be a "one-stop" shop. What I mean by this is that Users will also be able to find out information about different countries of the world using the search bar or by clicking on the continent button links.
 They can study for the quiz by using the links and the search bar to find out information on countries.
 
-### Goals
+### Goals <a name="goals"></a>
 
 * To show that I have a deep understanding of HTML, CSS and JavaScript
 
@@ -45,7 +70,7 @@ They can study for the quiz by using the links and the search bar to find out in
 
 * To showcase a game that has differing scenarios based on score in the quiz.
 
-### User Stories
+### User Stories <a name="user-stories"></a>
 
 * "I want to be anle to view and use the site at any and all screen sizes"
 
@@ -67,11 +92,9 @@ They can study for the quiz by using the links and the search bar to find out in
 
 * "I want to be able to contact the site about any problems or issues I had with the game"
 
-* 
+## Scope <a name="scope"></a>
 
-## Scope
-
-### Features
+### Features <a name="features"></a>
 
 The website has one main page. This page will contain all the elements of my project except for the 404 page which is separate.
 
@@ -88,25 +111,25 @@ The website will also have a fixed navigation bar at the top of the page with th
 There will also be a footer fixed to the bottom of the page displaying social media icons and a trademark icon followed by my name.
 
 
-### Future Features
+### Future Features <a name="future-features"></a>
 
 Due to reasons outside of my control I was unable to add "Easy", "Medium" and "Hard" modes to the quiz in the time frame that was alloted for this project. However, It is something that a future release of the quiz will have, Each quiz will have 10 questions and depending on how they do on a level, the chance to move up and take on a more challenging quiz will be offered to them. I think this would really appeal to people who want to expand there knowledge base and in particular to kids who are just learning about the world and want to continue to push there boundaries. 
 
-## Structure
+## Structure <a name="structure"></a>
 
 The website is split into 4 different sections on one index.html file. Each section has a different role to play in the look and feel of the site to the user.
 
 It is important for the user to understand what the website is about when they land on the page. This is made apparent with the name of the site being countries of the world
 
-## Skeleton
+## Skeleton <a name="skeleton"></a>
 
-### Wireframes
+### Wireframes <a name="wireframes"></a>
 
 [Website Wireframe PDF](https://github.com/Brianconn71/ms2-countries-of-the-world/blob/master/assets/wireframes/Flags%20of%20the%20world.pdf)
 
 ![Website Wireframe](https://github.com/Brianconn71/ms2-countries-of-the-world/blob/master/assets/wireframes/Flags%20of%20the%20world.png)
 
-## Surface
+## Surface <a name="surface"></a>
 
 There are a lot of changes that were made to the site between inception of the idea and the final project. Initially, I had called it flags of the world and had a much different color theme and typography that the finished project.
 
@@ -117,7 +140,7 @@ I also added a custom made 404 page with a basic paragraph of text that informs 
 I wanted to have a bright colored and easy to read site. Keeping consistency thoughout the project and maintaining consistent coloring on the buttons was important too.
 
 
-### Color
+### Colors <a name="colors"></a>
 
 The main colors for the project were found using [coolors.co](https://coolors.co/c0bda5-cc978e-ed691d-261447-ff3864-262730). I spent time fiddling around with different color schemes but this was the most pleasing on the eye.
 
@@ -143,17 +166,17 @@ The main colors for the project were found using [coolors.co](https://coolors.co
 
 * #C21807 - This is the dark red color that somes up on the quiz game answer if the user selects the wrong answer.
 
-### Images
+### Images <a name="images"></a>
 
 The only images used in the making of the website were used in the header in conjunction with the bootstrap carousel. These images were taken from [Unsplash](www.unsplash.com).
 
-### Fonts
+### Fonts <a name="fonts"></a>
 
 Two fonts were used in the making of the site. The main-heading, logo font used on the site was [Poppins](https://fonts.google.com/specimen/Poppins?query=poppins&preview.text_type=custom) and the paragraph, sub-heading text used was [Raleway](https://fonts.google.com/specimen/Raleway?query=Raleway&preview.text_type=custom). The default font is sans-serif.
 
 These fonts complement each other very well and have easy readibility which is key for vicitors to my site.
 
-# Technologies Used
+# Technologies Used <a name="technologies-used"></a>
 
 * [HTML5](https://html.com/html5/)
     * HTML5 was used to make the index.html file for the site.
@@ -218,9 +241,9 @@ These fonts complement each other very well and have easy readibility which is k
 * [Programmable Web](https://www.programmableweb.com/)
     * ProgrammableWeb was the api used in the continent buttons section and the search bar to search for a country.
 
-# Testing
+# Testing <a name="testing"></a>
 
-# Deployment
+# Deployment <a name="deployment"></a>
 
 The project was developed using the [Gitpod IDE](https://www.gitpod.io/), it was committed to git and pushed to github using the built-in function within Gitpod.
 
@@ -270,9 +293,9 @@ git clone https://github.com/USERNAME/REPOSITORY
 
 Further reading and troubleshooting on cloning a repository from GitHub can be found [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
-# Credits
+# Credits <a name="credits"></a>
 
-## Content
+## Content <a name="content"></a>
 
 * The ideaa for my project came from an old globe game i remeembered having as a child. I wanted tto make a basic site that would appeal to people of all ages to help them to learn more about the countries of the world and then to test there knowledge in the quiz.
 
@@ -284,7 +307,7 @@ Further reading and troubleshooting on cloning a repository from GitHub can be f
 while [james-quick-youtube-series](https://www.youtube.com/watch?v=zZdQGs62cR8&list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF&index=3&ab_channel=JamesQQuick) has a playlist on creating a quiz app with Javascript which was my main source of guidance throughout the coding of the quiz game on my site.
 
 
-## Media
+## Media <a name="media"></a>
 
 * Carousel images on header
     * [An image of the earth from space](https://unsplash.com/photos/Q1p7bh3SHj8) taken by [Nasa](https://unsplash.com/@nasa)
@@ -297,7 +320,7 @@ while [james-quick-youtube-series](https://www.youtube.com/watch?v=zZdQGs62cR8&l
 
     * [An image of Europe](https://unsplash.com/photos/inNzGtPrkHk) taken by [USGS](https://unsplash.com/@usgs)
 
-## Code Snippets
+## Code Snippets <a name="code-snippets"></a>
 
 * I wanted to create a return to the top of the page button so that when a user is reading information about a country that they can press the button to return back to the top, took code example from w3 schools [here](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
 
@@ -330,12 +353,10 @@ while [james-quick-youtube-series](https://www.youtube.com/watch?v=zZdQGs62cR8&l
 
 * got advice and and guidance on creating a 404 page [here](https://youtu.be/kPtS4vO42II)
 
-# Acknowledgements
+# Acknowledgements <a name="acknowledgements"></a>
 
 I would like to give a huge thanks to my mentor Adegbenga Adeye for his help throughout this project and throughout the course so far.
 
 I would also like to say a huge thanks to the slack community, I wouldn't be where I am today without them.
 
 I used this [Udemy](https://www.udemy.com/course/50-projects-50-days/learn/lecture/23597708?start=0#content) from Brad Traversy and Florin Pop for some help, guidance and inspiration for my own project. I used it as a source of inspiration for my own project and at times to troubleshoot problems I had.
-
-
