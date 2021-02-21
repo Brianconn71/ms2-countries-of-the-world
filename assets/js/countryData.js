@@ -12,7 +12,7 @@ $(document).ready(function() {
         $.ajax({
             url: `https://restcountries.eu/rest/v2/name/${searchValue}`,
         }).done(function(data) {
-            $('#country-search').html(`
+        $('#country-search').html(`
             <div class="card country-card">
                 <img src="${data[0].flag}" class="card-img-top" alt="${data[0].name} flag">
                 <div class="card-body">
@@ -27,6 +27,10 @@ $(document).ready(function() {
                     </p>
                 </div>
             </div>
+            `);
+        }).fail(function(data){
+            $('#country-search').html(`
+                <div>The country you are looking for does not exist, please search again and watch your spelling!</div>
             `);
         });
     });
