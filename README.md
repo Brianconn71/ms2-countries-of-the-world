@@ -7,8 +7,11 @@ I built this Website from scratch using a combination of HTML, CSS and JavaScrip
 
 I chose to do my project based on an quiz mainly as I have a deep love of quizzes myself and I liked the idea of challenging myself to make a quiz app.
 I chose to do it based on the countries of the world and in particular the flags of the countries of the world. 
-Ever since I was a young lad, I have always had a fascination with flags and with geography as a whole.
-I wanted to take that keen interest I have in quizzes and geography to make a flags quiz as my project.
+
+
+Ever since I was young, I have always had a fascination with countries and with geography as a whole.I wanted to take that keen interest I have in quizzes and geography to make a flags quiz as my project.
+
+When I was young I had a globe that when a country was pressed on, it would tell you its name, capital etc. There was some quizzes too that were fun such as find the country and find the capital. I wanted to make my project a fun, easy going site that would appeal to people of al ages and that anyone could use to find out some more information about a country and take there knowledge to another level by taking the quiz.
 
 # Table of Contents
 
@@ -21,7 +24,7 @@ I wanted to take that keen interest I have in quizzes and geography to make a fl
 I created this project as a means of showcasing all that I have learnt so far in my journey towards being a full-stack developer at Code Institute. This is my second project and it showcases my knowledge of
 HTML, CSS and Javascript along with some of the libraries including jQuery and bootstrap. It also showcases knowledge of various methods and functions in the JavaScript language and the dom.
 
-This website should provide some fun light-hearted entertainment in the form of a quiz based on the flags of the world and other geographical data. I set up the website so as to be a "one-stop" shop. What I mean by this is that Users will also be able to find out information about different countries of the world using the search bar or by clicking on the continent links.
+This website should provide some fun light-hearted entertainment in the form of a quiz based on the countries of the world and other geographical data. I set up the website so as to be a "one-stop" shop. What I mean by this is that Users will also be able to find out information about different countries of the world using the search bar or by clicking on the continent button links.
 They can study for the quiz by using the links and the search bar to find out information on countries.
 
 ### Goals
@@ -56,7 +59,7 @@ They can study for the quiz by using the links and the search bar to find out in
 
 * "I want to be able to see my score."
 
-* "I want to be able to start a new game once I have finished the last."
+* "I want to be able to play the quiz again when I have finished."
 
 * "I want to be able to contact the site about any problems or issues I had with the game"
 
