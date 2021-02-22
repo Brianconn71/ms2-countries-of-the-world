@@ -14,12 +14,13 @@ function scrollToTop(){
     }
 }
 
+// return to top of page
 function topOfPage(){
     document.documentElement.scrollTop = 0;
     document.body.scrollTop = 0;
 }
 
-// A jQuery function to move the page down to the search section once the user clicks on the header cta button
+// A jQuery function to move the page down to the search section once the user clicks on the header cta button and to move to the quiz section of page too
 // I spent some time figuring this out but eventually I got my answer here: https://stackoverflow.com/questions/2238368/how-to-make-a-button-redirect-to-another-page-using-jquery-or-just-javascript
 // Wanted to make the buttons scroll smoothly so I found a solution here: https://stackoverflow.com/questions/18071046/smooth-scroll-to-specific-div-on-click
 $(document).ready(function(){

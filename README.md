@@ -72,7 +72,7 @@ They can study for the quiz by using the links and the search bar to find out in
 
 ### User Stories <a name="user-stories"></a>
 
-* "I want to be anle to view and use the site at any and all screen sizes"
+* "I want to be able to view and use the site at any and all screen sizes"
 
 * "I want to understand what the site is about and easily manouver throughout the site."
 
@@ -243,6 +243,112 @@ These fonts complement each other very well and have easy readibility which is k
 
 # Testing <a name="testing"></a>
 
+Testing of the site was required for my milestone 2 project. 
+
+To test for responsiveness of my website. I used Chrome Dev Tools to test the site at the various screen resolutions.
+
+My site was found to be mobile responsive on each screen resolution and is mobile responsive down to a screen resolution of 280px. 
+ 
+Below is a list of all of the screens that my site was tested on. 
+
+* Galaxy Fold
+
+* iPhone5/SE
+
+* Galaxy S5
+
+* Moto G4
+
+* iPhone 6/7/8
+
+* Surface Duo
+
+* iPhone 6/7/8 Plus
+
+* Galaxy S9 + S10e
+
+* iPhone X/Xs
+
+* Pixel 2 XL
+
+* 720p + 1080p screens
+
+I also had family members and friends test out the site on their various devices/gagets and it was responsive and acting as it should on each device used.
+
+### HTML Validation
+
+[W3c Markup Validation tool](https://validator.w3.org/) was used to test the site for HTML Validation. My site passed the HTML Validator test. Below is an image of the HTML validation test of my site:
+
+![HTML Validation]()
+
+### CSS Validation
+
+Again, [W3c Markup Validation tool](https://validator.w3.org/) was used to test the css on my site. My site passed the CSS Validator test. Below is an image of the CSS Validatoion test on my site:
+
+![CSS Validation]()
+
+### Web Performance
+
+I also ran my site through another test. This test was carried out through [Webtest.org](https://www.webpagetest.org/). This test was to test the sites peformance on the factors listed on the webtest.org site. Below is an image of my Websites Performance test:
+
+![WebTest Validation]()
+
+### JavaScript Testing
+
+I used [jshint.com](https://jshint.com/) to test my sites Javascript. My site passed the tests on JsHint
+
+### Known Bug/issue
+
+When the quiz reaches the end and the resuts div is shown, an issue arises in the console. I was unable to fully get to the bottom of the issue but it is not apparent on the site. It shows an error only in the console.
+
+### User story testing
+
+* "I want to be able to view and use the site at any and all screen sizes"
+    * The site was tested on all browser engines and it is fully responsive on all browsers.
+    * The site was tested on various screen sizes and was found to be responsive at every screen resolution down to 280px.
+    * I gave permission to friends and family members to pay around with the site on various devices. No known issues were found in this testing.
+
+* "I want to understand what the site is about and easily manouver throughout the site."
+    * When a user lands on the site, There are two CTA's on the header that allow the user to interact with the site and manouver throughout the site.
+    * The logo for the site appears in the top left which tells the user what the page is about.
+    * By clicking on the logo, The user always stays on the index.html page.
+    * When a user clicks on the Discover the world button they are taken to the country search section of the webpage which will allow the user to search for a country or click on a continent button to find out more information about the countries of that particular continent.
+    * When a user clicks on the take our quiz button the user is taken to the quiz section of the website where they can start a new quiz by clicking the start the quiz button.
+    * The user is able to close the section of the website relating to the country search and continent buttons by clicking on the close button placed at the top right of the country cards.
+    * The user will click on the return to the top of the page arrow button at the bottom right of the page to easilt return to the top of the page whenever they scroll more than 50px from the top of the page.
+
+* "I want to be able to search and find whatever country I am looking for"
+    * The user can click on the search bar and type in the name of the country they want to search for. The search bar reacts to the input values being typed into the search bar and returns the relevant county that the user has searched for. Once the user has finished they may click the close button at the top right of the country card and it will disappear allowing them to make another search for a different country.
+    * The country that the user has ssearched for will appear just below the search bar. If the user has spelled a country wrong a message will appear telling them that no country matches their search and that they need to watch their spelling.
+    * If a user doesn't want to search for a particular country they can click on any of the continent buttons which will show the user the countries in tht particular continent. If the user doesn't want to see those countries anymore then they may click on the close button at the top right to close the display of the countries and then click on the return t top arrow at the bottom right of the page which will bring them back to the top of the page where they can better navigate the site again.
+
+* "I want to be able to start the game when I am fully ready and I don't want it to start before I say so."
+    * The quiz will not start until the user clicks on the start the quiz button, once clicked the quiz will begin and be displayed on the page.
+    * The quiz has no timer so a user may start a game go away and come back later to coplete the quiz.
+
+* "I want to be able to read the questions and answers easily and to be able to click on any answer I want."
+    * The questions appear very clearly in the quiz container, the writing is large enough and weighted enough to be able to read the questions easily. The answers display in grid format. When a user moves there mouse over an answer it increases its brightness by 20% which is a clear indicator to the user over which answer they are choosing. 
+    * there is no timer so there is no rush in reading the questions or answers
+
+* "I want to know whether or not my answer was correct"
+    * When a user selects an answer there is a timeout action set for 1 second after the question has been answered, then the answer will either turn red or green. The answer choice will turn green if the user has selected the correct answer to the question and the answer choice will turn red if the user has chosen the wrong answer. This makes it very clear to the user if there answer was right or wrong. 
+
+* "I want to be able to proceed to the next question automatically"
+    * When the user selects an answer to a question there i a very brief wait until the question either turns red or green indicating either a right or wrong answer. Once it is known the game automatically proceeds to the next question.
+    * The user does not need to do anything after they click n an answer the game will proceed to the next question. Again, there is no time limit so there is no stress over getting answers on time.
+
+* "I want to be able to see my score."
+    * At the top right of the quiz container, there is a score, for each correct answer the score goes up by 10. for each wrong answer the score stays as it is.
+    * At the end of the quiz the user will get a final score. As the user progresses through the quiz the score will remain at the top left making it easy for the user to know there score and how well they are doing throughout the quiz.
+    * Each right answer the score improves by 10 and each wrong answer the score will stay the same.
+
+* "I want to be able to play the quiz again when I have finished."
+    * When the user finishes the quiz a results container will be displayed where the quiz container once stood. The results container will contain a heading congratulating the user on completing the quiz, it will also show them their score and will ask them if they wish to play again. There will be a play again button displayed below that and when the user clicks on t, it will allow them to take the quiz again.
+
+* "I want to be able to contact the site about any problems or issues I had with the game"
+    * At the bottom of the page there will be a send us a message container which will display a form that the user can fill out in order to air any concerns or grievances they have about the site. They can also use this to tell us about how much they love the site and send us their high scores.
+    * All of the fields are required so the user will have to input data into each field before the form can be sent.
+    * When the user submits the form a message will then appear to the user telling them that we will get back to them asap.
 
 
 # Deployment <a name="deployment"></a>
