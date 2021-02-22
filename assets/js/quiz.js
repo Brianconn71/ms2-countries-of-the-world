@@ -67,7 +67,7 @@ function nextQuestion() {
         // Shows a new container after a user finishes the quiz
         questionContainer.classList.add('hide');
         finishedGame.classList.remove('hide');
-    }
+    } else{
     questionCounter++;
     progressText.innerHTML = `Question ${questionCounter}/${max_questions}`;
     // udate the progress bar
@@ -85,6 +85,7 @@ function nextQuestion() {
     availableQuestions.splice(questionIndex, 1);
 
     acceptingAnswers = true;
+    }
 }
 
 answers.forEach(choice => {
