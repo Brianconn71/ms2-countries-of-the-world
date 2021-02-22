@@ -36,6 +36,7 @@ When I was young I had a globe that when a country was pressed on, it would tell
     * [Images](#images)
     * [Fonts](#fonts)
 8. [Technologies Used](#technologies-used)
+9. [Testing](#testing)
 9. [Deployment](#deployment)
 10. [Credits](#credits)
     * [Content](#content)
@@ -241,7 +242,7 @@ These fonts complement each other very well and have easy readibility which is k
 * [Programmable Web](https://www.programmableweb.com/)
     * ProgrammableWeb was the api used in the continent buttons section and the search bar to search for a country.
 
-# Testing <a name="testing"></a>
+# Testing <a name="#testing"></a>
 
 Testing of the site was required for my milestone 2 project. 
 
@@ -369,6 +370,59 @@ I used [jshint.com](https://jshint.com/) to test my sites Javascript. My site pa
 * Header CTAs
     * Ensure both Cta's link to the correct section of the page.
     * Ensure that they respond correctly to changes in the screen size and on different devices.
+    * ensure that on mobile screens the two buttons are displayed over one another
+    * Ensure that when clicked the buttons move slightly down the Y axis giving the impression of actually pressing a button.
+
+* Country search section
+    * Ensure that the user can search for a country on any device size.
+    * Ensure that if a spelling of a country is in correct or does not exist then a message will display on the dom below the search bar informing the user that they hav made an error, or to watch their spelling.
+    * Ensure that The search bar and the continent buttons are mobile responsive and respond to changes in screen sizes sufficiently.
+    * Ensure that when clicked on the continent buttons will display the countries in that continent and no other.
+    * Ensure that when the close button is clicked in the top right that all countries will be removed and that section of the dom will close. Ensure this works on all device sizes.
+    * Ensure that the return to top arrow is well positioned and clear of its aim that the user can return to the top of the page and the main navigation through the site when clicked on.
+    * Ensure that a close button appears at the top right of the country card when it is searchd using the search bar, also ensure that when clicked the country card disappears and the dom returns to normal.
+    * Ensure that when clicked the continent buttons move slightly down the Y axis giving the impression of actually clicking a button.
+
+* Quiz game
+    * Ensure that the start the quiz button appears on the dom at all screen sizes and is responsive to cicks at all screen sizes.
+    * Ensure the quiz game appears at all screen sizes and is responsive to changes in the screen size.
+    * Ensure the answers grid responds to changes in the screen size.
+    * Ensure that when hovered over the quiz answers brightness increases by 20%.
+    * Ensure that the questions and the answers are easy to read and understand at all screen sizes.
+    * Ensure that any answer can be clicked on.
+    * Ensure that if an answer selected by the user is wrong then the dark red incorrect class is passed to the answer and the answer turns red indicating to the user they have selected a wrong answer.
+    * Ensure that if a user selects the correct answer that the users choice turns green indicating a correct answer.
+    * Ensure that the color of the text on the users selected answer changes to a whiter color when selected.
+    * Ensure that the progress bar is easy to see and understand.
+    * Ensure that the score is easy to find, read and understand
+    * Ensure that the questions remaining is easy to see, read and understand.
+    Ensure that the progress ba, score and questions remaining respond to changes in screen size and respond to the questions and answer selected by the user.
+    * Ensure the score only increases if the user selects the correct answer.
+    * Ensure the progress bar and questions remaining increase for every new question that appears.
+    * Ensure the quiz only allows for 10 questions.
+    * Ensure that the results container appears when the user finishes the quiz.
+    * Ensure that the score results appear in the results container showing the user there final score.
+    * Ensure that the play again button appears in the results container allowing the user to play the quiz again.
+    * Ensure that when clicked on the play again button allows the user to retake the quiz.
+
+* Contact Us section
+    * Ensure that the user can send a message at every screen size
+    * Ensure that the contact form responds to screen size changes
+    * Ensure that the text is easy to read and understand.
+    * Ensure that the placeholder text is easy to read aand understand
+    * Ensure that the fields in the form are required and a user must enter data before the form can be sent.
+    * Ensure that the user must select one of the three options in the drop down list.
+    * Ensure that when a user sends the form, A confirmation message appears when they click submit.
+
+* Footer
+    * Ensure it responds to changes in screen sizes and is mobile responsive at all screen sizes.
+    * Ensure that the links in the footer respond to user clicks and link to the correct pages.
+    * Ensure that when hovered over, the social media links change colors to their own brand colors.
+    * Ensure that the social links grow in size when hovered.
+
+* Return to top of page arrow
+    * Ensure that it is mobile responsive and reacts to changes in screen size.
+    * Ensure that when clicked the browser scrolls back to the top of the page.
 
 
 # Deployment <a name="deployment"></a>

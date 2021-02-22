@@ -29,6 +29,8 @@ startBtn.addEventListener('click', startQuiz);
 // the below fetch, gets the questions and answers for the quiz form the open trivia database https://opentdb.com/
 //Struggled badly with the quiz initially before I got inspiration and guidance from the set of videos on youtube located here: https://www.youtube.com/watch?v=3aKOQn2NPFs&list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF&index=11&ab_channel=JamesQQuick
 
+
+// The below fetches the questions from the api and formats them to be displayed on the dom
 fetch('https://opentdb.com/api.php?amount=10&category=22&difficulty=easy&type=multiple')
     .then((res) => {
         return res.json();
@@ -40,6 +42,7 @@ fetch('https://opentdb.com/api.php?amount=10&category=22&difficulty=easy&type=mu
             };
             //questions.innerHTML = formattedQuestion.question
             const answerChoices = [...loadedQuestion.incorrect_answers];
+            // Ensures the answers are not always in the same grid block and moved around sufficiently
             formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
             answerChoices.splice(formattedQuestion.answer - 1, 0, loadedQuestion.correct_answer);
 
@@ -49,7 +52,9 @@ fetch('https://opentdb.com/api.php?amount=10&category=22&difficulty=easy&type=mu
             return formattedQuestion;
         });
     })
-    .catch((err) => {});
+    .catch((err) => {
+
+    });
 
 
 function startQuiz() {
