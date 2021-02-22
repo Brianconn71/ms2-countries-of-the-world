@@ -279,27 +279,24 @@ I also had family members and friends test out the site on their various devices
 
 [W3c Markup Validation tool](https://validator.w3.org/) was used to test the site for HTML Validation. My site passed the HTML Validator test. Below is an image of the HTML validation test of my site:
 
-![HTML Validation]()
+![HTML Validation](https://github.com/Brianconn71/ms2-countries-of-the-world/blob/master/assets/images/html-validation.JPG)
 
 ### CSS Validation
 
 Again, [W3c Markup Validation tool](https://validator.w3.org/) was used to test the css on my site. My site passed the CSS Validator test. Below is an image of the CSS Validatoion test on my site:
 
-![CSS Validation]()
+![CSS Validation](https://github.com/Brianconn71/ms2-countries-of-the-world/blob/master/assets/images/css-validation.JPG)
 
 ### Web Performance
 
 I also ran my site through another test. This test was carried out through [Webtest.org](https://www.webpagetest.org/). This test was to test the sites peformance on the factors listed on the webtest.org site. Below is an image of my Websites Performance test:
 
-![WebTest Validation]()
+![WebTest Validation](https://github.com/Brianconn71/ms2-countries-of-the-world/blob/master/assets/images/webtest.JPG)
 
 ### JavaScript Testing
 
 I used [jshint.com](https://jshint.com/) to test my sites Javascript. My site passed the tests on JsHint
 
-### Known Bug/issue
-
-When the quiz reaches the end and the resuts div is shown, an issue arises in the console. I was unable to fully get to the bottom of the issue but it is not apparent on the site. It shows an error only in the console.
 
 ### User story testing
 
@@ -357,6 +354,21 @@ When the quiz reaches the end and the resuts div is shown, an issue arises in th
     * The nav bar at the top of the page is responsive. The burger menu icon comes into place as the screen resolution decreases.
     * The nav bar is visible as the user scrolls down the page or if the user lands on the 404 error page, the header remains visible at the top of the page
     * The logo appears in the top left corner of the site and is responsive to changes in screen resolution, the logo responds to the width of its container and whitespace.
+    * When the links in the nav bar are hovered over there brightness increases by 20%
+    * Click on the links in the searchbar to go to the relevant sections on the page.
+    * Verify that the burger icon works and that the collapsed menu works correctly.
+    * Ensure the nav bar is functional and all links remain functional on different sized screens and different physical devices.
+
+* Header
+    * Ensure that the carousel is functioning sufficiently.
+    * Ensure that the carousel rotates between 5 different images.
+    * Ensure that the CTA's are clear and present.
+    * Verify that the CTA's link to the correct sections of the page.
+    * The header carousel images are mobile responsive and respond to changes in the screen resolution.
+
+* Header CTAs
+    * Ensure both Cta's link to the correct section of the page.
+    * Ensure that they respond correctly to changes in the screen size and on different devices.
 
 
 # Deployment <a name="deployment"></a>
