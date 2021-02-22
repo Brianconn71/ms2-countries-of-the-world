@@ -242,7 +242,7 @@ These fonts complement each other very well and have easy readibility which is k
 * [Programmable Web](https://www.programmableweb.com/)
     * ProgrammableWeb was the api used in the continent buttons section and the search bar to search for a country.
 
-# Testing <a name="#testing"></a>
+# Testing <a name="testing"></a>
 
 Testing of the site was required for my milestone 2 project. 
 
