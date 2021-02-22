@@ -350,6 +350,14 @@ When the quiz reaches the end and the resuts div is shown, an issue arises in th
     * All of the fields are required so the user will have to input data into each field before the form can be sent.
     * When the user submits the form a message will then appear to the user telling them that we will get back to them asap.
 
+### Features Testing
+
+* Nav Bar
+
+    * The nav bar at the top of the page is responsive. The burger menu icon comes into place as the screen resolution decreases.
+    * The nav bar is visible as the user scrolls down the page or if the user lands on the 404 error page, the header remains visible at the top of the page
+    * The logo appears in the top left corner of the site and is responsive to changes in screen resolution, the logo responds to the width of its container and whitespace.
+
 
 # Deployment <a name="deployment"></a>
 
